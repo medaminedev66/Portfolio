@@ -4,11 +4,11 @@
   box-sizing: content-box;
 }
 
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+header {
   background-color: #3c3a39;
   height: 60px;
   align-items: center;
@@ -16,28 +16,28 @@ header{
   justify-content: space-between;
 }
 
-header p{
+header p {
   color: white;
   font-size: 18px;
   padding-left: 20px;
   font-weight: 700;
 }
 
-nav{
+nav {
   margin-right: 20px;
 }
 
-nav img{
+nav img {
   height: 24px;
   width: 24px;
 }
 
-main{
+main {
   background-color: #1c1a19;
   height: 100%;
 }
 
-.intro{
+.intro {
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 80px;
@@ -45,24 +45,24 @@ main{
   align-items: center;
 }
 
-.intro h1{
+.intro h1 {
   color: #ff6b00;
   font-size: 40px;
   font-family: 'Courier New', Courier, monospace;
 }
 
-.intro h2{
+.intro h2 {
   color: white;
   font-size: 20px;
 }
 
-.intro p{
+.intro p {
   padding-top: 10px;
   color: white;
   font-size: 16px;
 }
 
-.social-links{
+.social-links {
   margin-top: 15px;
   display: flex;
   width: 200px;
@@ -70,18 +70,18 @@ main{
   flex-wrap: wrap;
 }
 
-.btn img{
+.btn img {
   height: 24px;
   width: 24px;
 }
 
-button{
-  background: none; 
+button {
+  background: none;
   border: none;
 }
 
-.victor{
+.victor {
   position: absolute;
-  right: 0px;
+  right: 0%;
   bottom: 15%;
 }
