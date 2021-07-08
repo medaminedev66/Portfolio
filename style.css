@@ -301,9 +301,9 @@ button {
   margin-bottom: 45px;
 }
 
-.skills ul li{
- list-style-type: none;
- font-size: 22px;
- margin-bottom: 32px;
- color: white;
+.skills ul li {
+  list-style-type: none;
+  font-size: 22px;
+  margin-bottom: 32px;
+  color: white;
 }
