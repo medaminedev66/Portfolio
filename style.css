@@ -92,15 +92,14 @@ button {
   display: grid;
   background-color: white;
   grid-template-columns: auto;
-  height: fit-content;
   min-width: 375px;
-  padding: 120px 0px 120px 0px;
+  padding: 120px 0.1px 120px 0.1px;
 }
 
 .my-recent-work {
   display: flex;
   flex-direction: column;
-  margin: 0px 24px 0px 24px;
+  margin: 0.1px 24px 0.1px 24px;
   height: min-content;
 }
 
@@ -114,7 +113,6 @@ button {
 
 .line {
   border-bottom: 1px solid black;
-  
 }
 
 .my-recent-work img {
@@ -129,14 +127,13 @@ button {
   font-size: 32px;
   line-height: 44px;
   align-items: center;
-  
 }
 
 .my-recent-work p {
   font-size: 16px;
   line-height: 24px;
   align-items: center;
-  margin: 5px 0px;
+  margin: 5px 0.1px;
 }
 
 .used-languages {
@@ -167,7 +164,7 @@ button {
   position: static;
   left: 0px;
   width: 124px;
-  margin: 5px 0px;
+  margin: 5px 0.1px;
   align-items: center;
 }
 
@@ -222,7 +219,7 @@ button {
 
 .see-Project {
   position: static;
-  bottom: 0px;
+  bottom: 0.1px;
   background: #FF6B00;
   border: none;
   color: white;
@@ -283,7 +280,7 @@ button {
 .line-1 img {
   position: absolute;
   justify-content: end;
-  right: 0px;
+  right: 0.1px;
   bottom: 10px
 }
 
