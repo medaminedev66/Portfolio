@@ -159,9 +159,6 @@ button {
   width: 124px;
   margin: 5px 0.1px;
   align-items: center;
-}
-
-.btn-project p {
   font-family: inherit;
   font-weight: 700;
   font-size: 17px;
@@ -171,7 +168,7 @@ button {
 
 /* more projects */
 .project {
-  background: url(img/Img\ Placeholder1.png);
+  background: url(img/Placeholder1.png);
   display: flex;
   flex-direction: column;
   margin: 7px 24px 7px 24px;
