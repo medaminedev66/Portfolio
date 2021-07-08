@@ -136,22 +136,18 @@ button {
   margin: 5px 0.1px;
 }
 
-
 .btn-language {
   border: 1px solid #8993a4;
   background: white;
   align-items: center;
   padding: 3px 12px;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .btn-language:hover {
   background-color: orange;
   color: white;
-}
-
-.btn-language p {
-  font-size: 15px;
-  line-height: 20px;
 }
 
 .btn-project {
@@ -264,13 +260,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.get h4 {
-  padding: 10px 10px;
   text-align: center;
   color: white;
   letter-spacing: 0.03em;
+  font-weight: 700;
 }
 
 .line-1 img {
