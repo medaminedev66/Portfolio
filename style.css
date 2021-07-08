@@ -136,12 +136,9 @@ button {
   margin: 5px 0.1px;
 }
 
-.used-languages {
-  margin-left: 1;
-}
 
 .btn-language {
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
   background: white;
   align-items: center;
   padding: 3px 12px;
@@ -158,11 +155,11 @@ button {
 }
 
 .btn-project {
-  background: #FF6B00;
+  background: #ff6b00;
   border: none;
   color: white;
   position: static;
-  left: 0px;
+  left: 0.1px;
   width: 124px;
   margin: 5px 0.1px;
   align-items: center;
@@ -208,7 +205,7 @@ button {
 }
 
 .btn-lng {
-  background: rgba(255, 255, 255, 0.24);;
+  background: rgba(255, 255, 255, 0.24);
   align-items: center;
   padding: 10px 12px;
   margin: 10px 10px 10px 10px;
@@ -220,7 +217,7 @@ button {
 .see-Project {
   position: static;
   bottom: 0.1px;
-  background: #FF6B00;
+  background: #ff6b00;
   border: none;
   color: white;
   min-width: 327px;
@@ -235,18 +232,17 @@ button {
 
 .about-me {
   background-color: black;
-  height: fit-content;
   display: flex;
   flex-direction: column;
   color: bisque;
-  padding: 0px 24px;
+  padding: 0.1px 24px;
 }
 
 .about-me h2 {
   font-family: 'Courier New', Courier, monospace;
   text-align: justify;
   font-size: 72px;
-  color: #FF6B00;
+  color: #ff6b00;
   margin-top: 120px;
 }
 
@@ -281,7 +277,7 @@ button {
   position: absolute;
   justify-content: end;
   right: 0.1px;
-  bottom: 10px
+  bottom: 10px;
 }
 
 .line-1 {
@@ -305,7 +301,7 @@ button {
   margin-bottom: 45px;
 }
 
-.skills ul li {
+.skills ul li{
  list-style-type: none;
  font-size: 22px;
  margin-bottom: 32px;
