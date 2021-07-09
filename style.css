@@ -31,6 +31,10 @@ header p {
   font-weight: 700;
 }
 
+header a{
+  text-decoration: none;
+}
+
 nav {
   margin-right: 20px;
 }
@@ -95,8 +99,6 @@ button {
   right: 0%;
   bottom: 15%;
 }
-
-/* My my-projects */
 
 .my-projects {
   display: grid;
@@ -193,7 +195,6 @@ button {
   background-color: orange;
 }
 
-/* more projects */
 .project {
   background: url(img/Placeholder1.png);
   display: flex;
@@ -258,8 +259,6 @@ button {
   background-color: white;
   color: #ff6b00;
 }
-
-/* about me */
 
 .about-me {
   background-color: black;
