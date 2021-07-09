@@ -4,6 +4,7 @@
   --font-Poppins: 'Poppins', sans-serif;
   --font-Robot: 'Roboto', sans-serif;
 }
+
 * {
   margin: 0.1px;
   padding: 0.1px;
@@ -146,10 +147,12 @@ button {
   align-items: center;
   margin: 5px 0.1px;
 }
-.my-recent-work ul{
+
+.my-recent-work ul {
   display: flex;
   flex-direction: row;
 }
+
 .my-recent-work ul li {
   margin-right: 5px;
   border: 1px solid #8993a4;
@@ -189,8 +192,6 @@ button {
 .btn-project:hover {
   background-color: orange;
 }
-
-
 
 /* more projects */
 .project {
@@ -249,7 +250,7 @@ button {
   line-height: 24px;
 }
 
-.see-Project:active{
+.see-Project:active {
   background-color: white;
 }
 
