@@ -417,6 +417,8 @@ button {
   justify-content: center;
   list-style: none;
   margin-top: 7px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .icons-list li {
@@ -430,6 +432,11 @@ button {
 }
 
 .line-2 {
-  border-bottom: 2px solid #0D151E;
+  display: flex;
+  justify-content: center;
+}
+
+.line-2-1 {
+  border-bottom: 5px solid #0D151E;
   width:130px; 
 }
