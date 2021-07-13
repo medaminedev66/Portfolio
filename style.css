@@ -411,6 +411,25 @@ button {
   justify-content: center;
 }
 
-.line-2 {
+.icons-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  margin-top: 7px;
+}
 
+.icons-list li {
+  margin-right: 10px;
+  color:#505F79;
+}
+
+.icons-list li i {
+  width: 20px;
+  height: 20px;
+}
+
+.line-2 {
+  border-bottom: 2px solid #0D151E;
+  width:130px; 
 }
