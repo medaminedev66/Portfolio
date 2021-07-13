@@ -157,7 +157,7 @@ button {
 
 .icons-list li {
   margin-right: 10px;
-  color:#505F79;
+  color: #505f79;
 }
 
 .my-recent-work ul li {
@@ -390,7 +390,7 @@ button {
 }
 
 .footer-form form label textarea {
-  background-color: #fbF8f7;
+  background-color: #fbf8f7;
   border: none;
   padding-top: 5px;
   padding-left: 5px;
@@ -444,5 +444,5 @@ button {
 
 .line-2-1 {
   border-bottom: 5px solid #0d151e;
-  width: 130px; 
+  width: 130px;
 }
