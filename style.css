@@ -155,6 +155,11 @@ button {
   flex-direction: row;
 }
 
+.icons-list li {
+  margin-right: 10px;
+  color:#505F79;
+}
+
 .my-recent-work ul li {
   margin-right: 5px;
   border: 1px solid #8993a4;
@@ -337,11 +342,6 @@ button {
   margin-bottom: 45px;
 }
 
-.icons-list li {
-  margin-right: 10px;
-  color:#505F79;
-}
-
 .skills ul li {
   list-style-type: none;
   font-size: 22px;
@@ -356,7 +356,7 @@ button {
   grid-template-rows: auto;
   grid-gap: 1rem;
   padding: 0 24px;
-  border-bottom: 1px solid#DFE1E6;
+  border-bottom: 1px solid#dfe1e6;
   padding-bottom: 130px;
 }
 
@@ -427,7 +427,12 @@ button {
   margin-bottom: 10px;
 }
 
-.icons-list li i {
+.icons-list li a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.icons-list li a i {
   width: 20px;
   height: 20px;
 }
