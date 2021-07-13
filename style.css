@@ -351,7 +351,7 @@ button {
   grid-template-rows: auto;
   grid-gap: 1rem;
   padding: 0 24px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid#DFE1E6;
   padding-bottom: 130px;
 }
 
