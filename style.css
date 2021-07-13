@@ -337,6 +337,11 @@ button {
   margin-bottom: 45px;
 }
 
+.icons-list li {
+  margin-right: 10px;
+  color:#505F79;
+}
+
 .skills ul li {
   list-style-type: none;
   font-size: 22px;
@@ -360,7 +365,7 @@ button {
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   margin-top: 120px;
 }
 
@@ -368,7 +373,8 @@ button {
   display: flex;
   flex-direction: column;
 }
-.footer-form form label{
+
+.footer-form form label {
   display: flex;
   justify-content: center;
 }
@@ -377,28 +383,28 @@ button {
   width: 100%;
   height: 2rem;
   border: none;
-  border-bottom: 1px solid #DBD8D7;
+  border-bottom: 1px solid #dbd8d7;
   margin-bottom: 15px;
   padding-bottom: 5px;
   padding-left: 5px;
 }
 
 .footer-form form label textarea {
-  background-color: #FBF8F7;
+  background-color: #fbF8f7;
   border: none;
   padding-top: 5px;
-  padding-left:5px;
+  padding-left: 5px;
   width: 100%;
   height: 114px;
   margin-bottom: 24px;
 }
 
 .footer-form form label textarea::placeholder {
-  color:#3C3A39;
+  color: #3c3a39;
 }
 
 .footer-form form label button {
-  background: #FF6B00;
+  background: #ff6b00;
   width: 131px;
   height: 48px;
   color: #fff;
@@ -421,11 +427,6 @@ button {
   margin-bottom: 10px;
 }
 
-.icons-list li {
-  margin-right: 10px;
-  color:#505F79;
-}
-
 .icons-list li i {
   width: 20px;
   height: 20px;
@@ -437,6 +438,6 @@ button {
 }
 
 .line-2-1 {
-  border-bottom: 5px solid #0D151E;
-  width:130px; 
+  border-bottom: 5px solid #0d151e;
+  width: 130px; 
 }
