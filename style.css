@@ -351,6 +351,8 @@ button {
   grid-template-rows: auto;
   grid-gap: 1rem;
   padding: 0 24px;
+  border-bottom: 1px solid black;
+  padding-bottom: 130px;
 }
 
 .footer-form p {
@@ -366,9 +368,14 @@ button {
   display: flex;
   flex-direction: column;
 }
+.footer-form form label{
+  display: flex;
+  justify-content: center;
+}
 
 .footer-form form label input {
   width: 100%;
+  height: 2rem;
   border: none;
   border-bottom: 1px solid #DBD8D7;
   margin-bottom: 15px;
@@ -383,6 +390,7 @@ button {
   padding-left:5px;
   width: 100%;
   height: 114px;
+  margin-bottom: 24px;
 }
 
 .footer-form form label textarea::placeholder {
@@ -401,4 +409,8 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   justify-content: center;
+}
+
+.line-2 {
+
 }
