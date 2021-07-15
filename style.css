@@ -101,7 +101,7 @@ button {
 .victor {
   position: absolute;
   right: 0%;
-  bottom: 15%;
+  top: 30%;
   z-index: 1;
 }
 
@@ -116,12 +116,14 @@ button {
   grid-template-columns: auto;
   min-width: 375px;
   padding: 120px 0.1px 120px 0.1px;
+  justify-content: center;
+  grid-gap: 5px;
 }
 
 .my-recent-work {
   display: flex;
   flex-direction: column;
-  margin: 0.1px 24px 0.1px 24px;
+  margin: 80px 24px 24px 24px;
   height: min-content;
 }
 
@@ -134,13 +136,17 @@ button {
 }
 
 .line {
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid #e5e5e5;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 30px;
 }
 
 .placeholder {
-  width: 327px;
-  height: 237px;
+  min-width: 327px;
+  height: auto;
   margin: 24px auto 24px auto;
+  width: 100%;
 }
 
 .my-recent-work h3 {
@@ -214,8 +220,8 @@ button {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  margin: 7px 24px 7px 24px;
-  height: 356px;
+  margin: 0.1px 24px 0.1px 24px;
+  max-height: 356px;
   min-width: 327px;
 }
 
@@ -282,6 +288,7 @@ button {
   flex-direction: column;
   color: bisque;
   padding: 0.1px 24px;
+  padding-bottom: 130px;
 }
 
 .about-me h2 {
@@ -329,7 +336,7 @@ button {
 .line-1 img {
   position: absolute;
   justify-content: end;
-  right: 0.1px;
+  right: -24px;
   bottom: 10px;
 }
 
@@ -534,7 +541,7 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 135px 0.1px 114px 0.1px;
+    margin: 0.1px 0.1px 114px 0.1px;
     grid-column: 1/4;
     grid-row: 1;
   }
@@ -542,6 +549,8 @@ button {
   .line {
     max-width: 794px;
     width: 100%;
+    margin-top: 0.1px;
+    border-bottom: 2px solid #212121;
   }
 
   .my-recent-work {
