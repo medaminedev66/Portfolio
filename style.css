@@ -1,8 +1,8 @@
 :root {
-  --font-Crete: 'Crete Round', serif;
-  --font-Inter: 'Inter', sans-serif;
-  --font-Poppins: 'Poppins', sans-serif;
-  --font-Robot: 'Roboto', sans-serif;
+  --font-Crete: "Crete Round", serif;
+  --font-Inter: "Inter", sans-serif;
+  --font-Poppins: "Poppins", sans-serif;
+  --font-Robot: "Roboto", sans-serif;
 }
 
 * {
@@ -31,7 +31,7 @@ header p {
   font-weight: 700;
 }
 
-header a {
+.logo a {
   text-decoration: none;
 }
 
@@ -42,6 +42,10 @@ nav {
 nav img {
   height: 24px;
   width: 24px;
+}
+
+nav ul {
+  display: none;
 }
 
 main {
@@ -98,6 +102,12 @@ button {
   position: absolute;
   right: 0%;
   bottom: 15%;
+  z-index: 1;
+}
+
+.vector1 {
+  width: 10px;
+  height: 10px;
 }
 
 .my-projects {
@@ -105,7 +115,7 @@ button {
   background-color: white;
   grid-template-columns: auto;
   min-width: 375px;
-  padding: 120px 0.1px 120px 0.1px;
+  padding: 120px 0.1px 120px 0.1x;
 }
 
 .my-recent-work {
@@ -115,24 +125,21 @@ button {
   height: min-content;
 }
 
-.my-recent-work h2 {
+.title1 h5 {
   font-family: var(--font-Crete);
   text-align: center;
-  min-height: 83px;
   min-width: 327px;
   font-size: 40px;
   line-height: 52px;
 }
 
 .line {
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid black;
 }
 
-.my-recent-work img {
-  position: static;
+.placeholder {
   width: 327px;
   height: 237px;
-  display: block;
   margin: 24px auto 24px auto;
 }
 
@@ -183,13 +190,15 @@ button {
   color: white;
   position: static;
   left: 0.1px;
-  width: 124px;
+  width: 128px;
+  height: 48px;
   margin: 5px 0.1px;
   align-items: center;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   padding: 3px 10px;
+  cursor: pointer;
 }
 
 .btn-project:active {
@@ -254,6 +263,7 @@ button {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .see-Project:active {
@@ -304,6 +314,7 @@ button {
   color: white;
   letter-spacing: 0.03em;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .get:active {
@@ -415,6 +426,12 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   justify-content: center;
+  cursor: pointer;
+}
+
+.footer-form form label button:hover {
+  background: #ffbe90;
+  color: #ff6b00;
 }
 
 .icons-list {
@@ -445,4 +462,121 @@ button {
 .line-2-1 {
   border-bottom: 5px solid #0d151e;
   width: 130px;
+}
+
+@media screen and (min-width: 720px) {
+  .logo {
+    flex: 2;
+  }
+  nav {
+    flex: 1;
+    margin-right: 50px;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+  }
+
+  nav a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .intro {
+    height: 800px;
+  }
+  .intro h1 {
+    margin-top: 150px;
+    font-size: 72px;
+  }
+  .intro h2 {
+    font-size: 32px;
+  }
+
+  .intro p {
+    font-size: 20px;
+    max-width: 560px;
+  }
+
+  .social-links {
+    width: 50px;
+    position: absolute;
+    left: 10px;
+    top: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 135px 0px 114px 0px;
+    grid-column: 1/4;
+    grid-row: 1;
+  }
+
+  .line {
+    width: 794px;
+  }
+
+  .my-recent-work {
+    display: flex;
+    flex-flow: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    grid-column: 1/4;
+    grid-row: 2;
+  }
+
+  .content1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 24px 0px 0px;
+    max-width: 448px;
+  }
+
+  .placeholder {
+    order: -1;
+    align-self: flex-start;
+    min-width: 684px;
+    min-height: 448px;
+    margin: 0.1px 10px 24px 0.1px;
+  }
+
+  .content1 p {
+    font-size: 20px;
+  }
+
+  .content1 h3 {
+    font-size: 40px;
+  }
+
+  .my-projects {
+    display: grid;
+    padding: 0px 143px 0px 143px;
+    margin: 0px;
+  }
+
+  .project {
+    max-width: 369px;
+    max-height: 435px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .vector1 {
+    position: absolute;
+    top: 70px;
+    right: 0.1px;
+    width: 662px;
+    height: 875px;
+  }
 }
