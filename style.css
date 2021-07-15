@@ -120,10 +120,10 @@ button {
   grid-gap: 5px;
 }
 
-.big-project{
+.big-project {
   display: grid;
   background-color: white;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 0.1px 0.1px 120px 0.1px;
   justify-content: space-between;
   grid-gap: 10px;
@@ -603,14 +603,14 @@ button {
     padding-right: 24px;
   }
 
-  .big-project{
+  .big-project {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(327px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
     padding-left: 24px;
     padding-right: 24px;
     grid-gap: 5px;
     padding-bottom: 130px;
-    padding-top: 24px ;
+    padding-top: 24px;
   }
 
   .project {
@@ -697,12 +697,11 @@ button {
     margin: 0.1px;
   }
 
-  .big-project{
-    grid-template-columns: repeat(auto-fit,369px);
+  .big-project {
+    grid-template-columns: repeat(auto-fit, 369px);
     padding-left: 141px;
     padding-right: 141px;
   }
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -713,5 +712,4 @@ button {
     width: 662px;
     height: 875px;
   }
-
 }
