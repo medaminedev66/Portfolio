@@ -113,11 +113,20 @@ button {
 .my-projects {
   display: grid;
   background-color: white;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   min-width: 375px;
-  padding: 120px 0.1px 120px 0.1px;
+  padding: 120px 0.1px 0.1px 0.1px;
   justify-content: center;
   grid-gap: 5px;
+}
+
+.big-project{
+  display: grid;
+  background-color: white;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  padding: 0.1px 0.1px 120px 0.1px;
+  justify-content: space-between;
+  grid-gap: 10px;
 }
 
 .my-recent-work {
@@ -221,7 +230,7 @@ button {
   display: flex;
   flex-direction: column;
   margin: 0.1px 24px 0.1px 24px;
-  max-height: 356px;
+  height: 356px;
   min-width: 327px;
 }
 
@@ -477,13 +486,13 @@ button {
   background: url(/img/Placeholder4.png);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 720px) {
   .see-Project {
     display: none;
   }
 
   .logo {
-    margin-left: 143px;
+    margin-left: 141px;
     flex: 2;
   }
 
@@ -510,7 +519,7 @@ button {
 
   .intro {
     height: 800px;
-    padding-left: 143px;
+    padding-left: 141px;
   }
 
   .intro h1 {
@@ -589,19 +598,25 @@ button {
 
   .my-projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 33.33%);
-    padding-left: 143px;
-    padding-right: 143px;
-    grid-gap: 7px;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 100%);
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .big-project{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(327px,1fr));
+    padding-left: 24px;
+    padding-right: 24px;
+    grid-gap: 5px;
     padding-bottom: 130px;
+    padding-top: 24px ;
   }
 
   .project {
-    max-width: 369px;
-    height: 435px;
+    width: 327px;
+    height: 386px;
     margin: 0.1px;
-    justify-content: flex-end;
   }
 
   .about-me {
@@ -631,12 +646,12 @@ button {
   .footer-form {
     display: flex;
     flex-direction: row;
-    padding-left: 143px;
-    padding-right: 143px;
+    padding-left: 141px;
+    padding-right: 141px;
   }
 
   .footer-form form {
-    margin-top: 143px;
+    margin-top: 141px;
     width: 100%;
     flex: 1;
   }
@@ -656,7 +671,7 @@ button {
   }
 
   .line-1 img {
-    right: -143px;
+    right: -141px;
   }
 
   .empty {
@@ -670,6 +685,26 @@ button {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .my-projects {
+    padding-left: 141px;
+    padding-right: 141px;
+  }
+
+  .project {
+    width: 369px;
+    height: 435px;
+    margin: 0.1px;
+  }
+
+  .big-project{
+    grid-template-columns: repeat(auto-fit,369px);
+    padding-left: 141px;
+    padding-right: 141px;
+  }
+
+}
+
 @media screen and (min-width: 1200px) {
   .vector1 {
     position: absolute;
@@ -678,4 +713,5 @@ button {
     width: 662px;
     height: 875px;
   }
+
 }
