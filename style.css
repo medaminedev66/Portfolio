@@ -123,7 +123,7 @@ button {
 .big-project {
   display: grid;
   background-color: white;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
   padding: 0.1px 0.1px 120px 0.1px;
   justify-content: space-between;
   grid-gap: 10px;
@@ -605,7 +605,7 @@ button {
 
   .big-project {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(327px, 327px));
     padding-left: 24px;
     padding-right: 24px;
     grid-gap: 5px;
