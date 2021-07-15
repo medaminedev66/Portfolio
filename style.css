@@ -302,10 +302,11 @@ button {
 
 .about-me h2 {
   font-family: var(--font-Crete);
-  text-align: justify;
+  /* text-align: justify; */
   font-size: 72px;
   color: #ff6b00;
   margin-top: 120px;
+  width: 327px;
 }
 
 .about-me p {
