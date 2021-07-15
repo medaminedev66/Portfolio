@@ -12,8 +12,6 @@
 
 [Live Demo Link](https://medaminedev66.github.io/Portfolio/)
 
-To get a local copy up and running follow these simple example steps.
-
 ### Setup
 Download this GitHub Repo and go the index.html file
 ### Install
