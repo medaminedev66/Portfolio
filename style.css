@@ -484,6 +484,7 @@ button {
 .empty {
   display: none;
   background: url(/img/Placeholder4.png);
+  border: 2px solid black;
 }
 
 @media screen and (min-width: 720px) {
