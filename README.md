@@ -8,10 +8,9 @@
 - Major languages : Html & Css
 - No Frameworks
 
+## Live Demo
 
-
-
-To get a local copy up and running follow these simple example steps.
+[Live Demo Link](https://medaminedev66.github.io/Portfolio/)
 
 ### Setup
 Download this GitHub Repo and go the index.html file

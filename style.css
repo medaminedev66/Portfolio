@@ -1,8 +1,8 @@
 :root {
-  --font-Crete: 'Crete Round', serif;
-  --font-Inter: 'Inter', sans-serif;
-  --font-Poppins: 'Poppins', sans-serif;
-  --font-Robot: 'Roboto', sans-serif;
+  --font-Crete: "Crete Round", serif;
+  --font-Inter: "Inter", sans-serif;
+  --font-Poppins: "Poppins", sans-serif;
+  --font-Robot: "Roboto", sans-serif;
 }
 
 * {
@@ -31,7 +31,7 @@ header p {
   font-weight: 700;
 }
 
-header a {
+.logo a {
   text-decoration: none;
 }
 
@@ -42,6 +42,10 @@ nav {
 nav img {
   height: 24px;
   width: 24px;
+}
+
+nav ul {
+  display: none;
 }
 
 main {
@@ -97,43 +101,61 @@ button {
 .victor {
   position: absolute;
   right: 0%;
-  bottom: 15%;
+  top: 30%;
+  z-index: 1;
+}
+
+.vector1 {
+  width: 10px;
+  height: 10px;
 }
 
 .my-projects {
   display: grid;
   background-color: white;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   min-width: 375px;
-  padding: 120px 0.1px 120px 0.1px;
+  padding: 120px 0.1px 0.1px 0.1px;
+  justify-content: center;
+  grid-gap: 5px;
+}
+
+.big-project {
+  display: grid;
+  background-color: white;
+  grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+  padding: 0.1px 0.1px 120px 0.1px;
+  justify-content: space-between;
+  grid-gap: 10px;
 }
 
 .my-recent-work {
   display: flex;
   flex-direction: column;
-  margin: 0.1px 24px 0.1px 24px;
+  margin: 80px 24px 24px 24px;
   height: min-content;
 }
 
-.my-recent-work h2 {
+.title1 h5 {
   font-family: var(--font-Crete);
   text-align: center;
-  min-height: 83px;
   min-width: 327px;
   font-size: 40px;
   line-height: 52px;
 }
 
 .line {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #e5e5e5;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 30px;
 }
 
-.my-recent-work img {
-  position: static;
-  width: 327px;
-  height: 237px;
-  display: block;
+.placeholder {
+  min-width: 327px;
+  height: auto;
   margin: 24px auto 24px auto;
+  width: 100%;
 }
 
 .my-recent-work h3 {
@@ -183,13 +205,15 @@ button {
   color: white;
   position: static;
   left: 0.1px;
-  width: 124px;
+  width: 128px;
+  height: 48px;
   margin: 5px 0.1px;
   align-items: center;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   padding: 3px 10px;
+  cursor: pointer;
 }
 
 .btn-project:active {
@@ -202,9 +226,10 @@ button {
 
 .project {
   background: url(img/Placeholder1.png);
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  margin: 7px 24px 7px 24px;
+  margin: 0.1px 24px 0.1px 24px;
   height: 356px;
   min-width: 327px;
 }
@@ -254,6 +279,7 @@ button {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .see-Project:active {
@@ -271,14 +297,15 @@ button {
   flex-direction: column;
   color: bisque;
   padding: 0.1px 24px;
+  padding-bottom: 130px;
 }
 
 .about-me h2 {
   font-family: var(--font-Crete);
-  text-align: justify;
   font-size: 72px;
   color: #ff6b00;
   margin-top: 120px;
+  max-width: 327px;
 }
 
 .about-me p {
@@ -304,6 +331,7 @@ button {
   color: white;
   letter-spacing: 0.03em;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .get:active {
@@ -317,7 +345,7 @@ button {
 .line-1 img {
   position: absolute;
   justify-content: end;
-  right: 0.1px;
+  right: -24px;
   bottom: 10px;
 }
 
@@ -415,6 +443,12 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   justify-content: center;
+  cursor: pointer;
+}
+
+.footer-form form label button:hover {
+  background: #ffbe90;
+  color: #ff6b00;
 }
 
 .icons-list {
@@ -445,4 +479,238 @@ button {
 .line-2-1 {
   border-bottom: 5px solid #0d151e;
   width: 130px;
+}
+
+.empty {
+  display: none;
+  background: url(/img/Placeholder4.png);
+  border: 2px solid black;
+}
+
+@media screen and (min-width: 720px) {
+  .see-Project {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 141px;
+    flex: 2;
+  }
+
+  nav {
+    flex: 1;
+    margin-right: 50px;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+  }
+
+  nav a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .intro {
+    height: 800px;
+    padding-left: 141px;
+  }
+
+  .intro h1 {
+    margin-top: 150px;
+    font-size: 72px;
+  }
+
+  .intro h2 {
+    font-size: 32px;
+  }
+
+  .intro p {
+    font-size: 20px;
+    max-width: 560px;
+  }
+
+  .social-links {
+    width: 50px;
+    position: absolute;
+    left: 10px;
+    top: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.1px 0.1px 114px 0.1px;
+    grid-column: 1/4;
+    grid-row: 1;
+  }
+
+  .line {
+    max-width: 794px;
+    width: 100%;
+    margin-top: 0.1px;
+    border-bottom: 2px solid #212121;
+  }
+
+  .my-recent-work {
+    display: flex;
+    flex-flow: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    grid-column: 1/4;
+    grid-row: 2;
+    margin: 0.1px 0.1px 0.1px 0.1px;
+  }
+
+  .content1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0.1px 24px 0.1px 0.1px;
+    max-width: 448px;
+  }
+
+  .placeholder {
+    order: -1;
+    align-self: flex-start;
+    margin: 0.1px 10px 24px 0.1px;
+    width: 100%;
+    height: auto;
+    max-width: 684px;
+  }
+
+  .content1 p {
+    font-size: 20px;
+  }
+
+  .content1 h3 {
+    font-size: 40px;
+  }
+
+  .my-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100%);
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .big-project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(327px, 327px));
+    padding-left: 24px;
+    padding-right: 24px;
+    grid-gap: 5px;
+    padding-bottom: 130px;
+    padding-top: 24px;
+  }
+
+  .project {
+    width: 327px;
+    height: 386px;
+    margin: 0.1px;
+  }
+
+  .about-me {
+    padding-left: 142px;
+    padding-right: 142px;
+  }
+
+  .about-me h2 {
+    font-size: 72px;
+  }
+
+  .about-me p {
+    font-size: 20px;
+    max-width: 566px;
+    height: auto;
+  }
+
+  .more-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 130px;
+    flex-wrap: wrap;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    padding-left: 141px;
+    padding-right: 141px;
+  }
+
+  .footer-form form {
+    margin-top: 141px;
+    width: 100%;
+    flex: 1;
+  }
+
+  .footer-form p {
+    max-width: 455px;
+    margin-top: 130px;
+    flex: 1;
+  }
+
+  .footer-form label textarea {
+    max-width: 684px;
+  }
+
+  .footer-form label input {
+    max-width: 684px;
+  }
+
+  .line-1 img {
+    right: -141px;
+  }
+
+  .empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .empty button {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .my-projects {
+    padding-left: 141px;
+    padding-right: 141px;
+  }
+
+  .project {
+    width: 369px;
+    height: 435px;
+    margin: 0.1px;
+  }
+
+  .big-project {
+    grid-template-columns: repeat(auto-fit, 369px);
+    padding-left: 141px;
+    padding-right: 141px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .vector1 {
+    position: absolute;
+    top: 70px;
+    right: 0.1px;
+    width: 662px;
+    height: 875px;
+  }
 }
