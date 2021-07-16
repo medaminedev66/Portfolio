@@ -589,7 +589,7 @@ button {
     max-width: 684px;
   }
 
-  .placeholder:hover{
+  .placeholder:hover {
     transform: scale(1.2);
   }
 
