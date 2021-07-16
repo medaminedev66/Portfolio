@@ -589,6 +589,10 @@ button {
     max-width: 684px;
   }
 
+  .placeholder:hover{
+    transform: scale(1.2);
+  }
+
   .content1 p {
     font-size: 20px;
   }
