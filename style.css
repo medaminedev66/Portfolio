@@ -495,6 +495,9 @@ button {
   .logo {
     margin-left: 141px;
     flex: 2;
+    transition-property: width, height;
+    transition-duration: 4s;
+    transition-delay: 2s;
   }
 
   nav {
@@ -590,7 +593,7 @@ button {
   }
 
   .placeholder:hover {
-    transform: scale(1.2);
+    transform: scale(0.8);
   }
 
   .content1 p {
