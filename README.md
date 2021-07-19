@@ -1,6 +1,6 @@
 # My Portfolio
 
-
+This is a practice project about building a mobile and website version of my portfolio.
 
 
 ## Built With
