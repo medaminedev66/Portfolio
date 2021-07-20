@@ -136,7 +136,7 @@ button {
   height: min-content;
 }
 
-.title1 h5 {
+.title1 h2 {
   font-family: var(--font-Crete);
   text-align: center;
   min-width: 327px;
@@ -205,8 +205,9 @@ button {
   color: white;
   position: static;
   left: 0.1px;
-  width: 128px;
-  height: 48px;
+  max-width: 128px;
+  min-height: 48px;
+  height: auto;
   margin: 5px 0.1px;
   align-items: center;
   font-weight: 700;
@@ -230,16 +231,18 @@ button {
   display: flex;
   flex-direction: column;
   margin: 0.1px 24px 0.1px 24px;
-  height: 356px;
+  min-height: 356px;
+  height: auto;
   min-width: 327px;
 }
 
-.project h2 {
+.project h3 {
   font-family: var(--font-Crete);
   color: white;
   font-size: 32px;
   line-height: 44px;
-  height: 81px;
+  min-height: 81px;
+  height: auto;
   padding-left: 12px;
   margin-top: 100px;
 }
@@ -254,6 +257,7 @@ button {
 
 .languages {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .btn-lng {
@@ -434,7 +438,8 @@ button {
 .footer-form form label button {
   background: #ff6b00;
   width: 131px;
-  height: 48px;
+  min-height: 48px;
+  height: auto;
   color: #fff;
   font-weight: bold;
   font-size: 17px;
@@ -519,7 +524,8 @@ button {
   }
 
   .intro {
-    height: 800px;
+    min-height: 800px;
+    height: auto;
     padding-left: 141px;
   }
 
@@ -615,8 +621,9 @@ button {
   }
 
   .project {
+    height: auto;
     width: 327px;
-    height: 386px;
+    min-height: 386px;
     margin: 0.1px;
   }
 
@@ -694,7 +701,8 @@ button {
 
   .project {
     width: 369px;
-    height: 435px;
+    min-height: 435px;
+    height: auto;
     margin: 0.1px;
   }
 
