@@ -421,15 +421,15 @@ button {
   padding-left: 5px;
 }
 
-.footer-form form label input:invalid{
+.footer-form form label input:invalid {
   border-bottom: 2px solid red;
 }
 
-.footer-form form label input:focus{
+.footer-form form label input:focus {
   border-bottom: 1px solid green;
 }
 
-.footer-form form label input:valid{
+.footer-form form label input:valid {
   border-bottom: 1px solid gray;
 }
 
