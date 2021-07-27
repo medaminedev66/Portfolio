@@ -16,9 +16,11 @@ body {
   font-family: var(--font-Inter);
 }
 
-p {
+.logo a{
+  text-decoration: none;
   color: var(--color-text);
 }
+
 
 header {
   background-color: #3c3a39;
@@ -35,10 +37,6 @@ header p {
   font-weight: 700;
 }
 
-.logo a {
-  text-decoration: none;
-}
-
 .mobile-menu {
   height: 100vh;
   position: fixed;
@@ -49,7 +47,7 @@ header p {
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   background-color: #3c3a39;
   align-items: flex-start;
@@ -76,32 +74,28 @@ header p {
 }
 
 .mobile-nav .closeBtn i {
+  display: inline;
   float: right;
+  color: #5b5957;
 }
 
-.fas {
-  /* display: none; */
+.closeBtn i {
+  display: none;
 }
 
 .mobile-nav li {
   width: 100%;
   margin-bottom: 2rem;
   border-bottom: 2px solid rgb(221, 202, 202);
+  padding-left: 0.5rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.4rem;
 }
 
 .mobile-nav li a {
   text-decoration: none;
   color: var(--color-text);
 }
-
-.mobile-nav li i {
-  color: var(--color-text);
-}
-
-/* .stop-scroll {
-  height: 100%;
-  overflow: hidden;
-} */
 
 .visible {
   display: none;
@@ -114,6 +108,7 @@ nav {
 nav img {
   height: 24px;
   width: 24px;
+  margin-right: 1rem;
 }
 
 nav ul {
@@ -584,7 +579,7 @@ button {
     margin-left: 141px;
     flex: 2;
   }
-
+  
   nav {
     flex: 1;
     margin-right: 50px;
