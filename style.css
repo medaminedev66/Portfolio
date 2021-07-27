@@ -16,7 +16,7 @@ body {
   font-family: var(--font-Inter);
 }
 
-.logo a{
+.logo a {
   text-decoration: none;
   color: var(--color-text);
 }
@@ -136,14 +136,15 @@ main {
 
 .intro h2 {
   font-family: var(--font-Robot);
-  color: white;
   font-size: 20px;
+  color: var(--color-text);
 }
 
 .intro p {
   font-family: var(--font-Poppins);
   padding-top: 10px;
   font-size: 16px;
+  color: white;
 }
 
 .social-links {
@@ -579,7 +580,7 @@ button {
     margin-left: 141px;
     flex: 2;
   }
-  
+
   nav {
     flex: 1;
     margin-right: 50px;
