@@ -1,12 +1,16 @@
-const openMenu = ()  => {
-    const menu = document.querySelector('header');
-    menu.classList.toggle('mobile-menu');
+const openMenu = () => {
+    document.querySelector('header').classList.toggle('mobile-menu');
     document.querySelector('nav > img').classList.toggle('visible');
     document.querySelector('nav > ul').classList.toggle('mobile-nav');
+    document.querySelector('nav').classList.toggle('nav-strech');
     document.querySelector('header > div').classList.toggle('visible');
 }
 document.querySelector('nav>img').addEventListener('click', openMenu);
-document.querySelector('ul > li i').addEventListener('click',openMenu);
+const items = Array.from(document.querySelectorAll('ul > li a'));
+for (let i = 0; i < items.length; i += 1) {
+    items[i].addEventListener('click', openMenu);
+}
+document.querySelector('ul > li i').addEventListener('click', openMenu);
 
 
 
