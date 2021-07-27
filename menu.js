@@ -4,8 +4,7 @@ const closeMenu = () => {
   document.querySelector('nav > ul').classList.remove('mobile-nav');
   document.querySelector('nav').classList.remove('nav-strech');
   document.querySelector('header > div').classList.remove('visible');
-
-}
+};
 
 const openMenu = () => {
   document.querySelector('header').classList.add('mobile-menu');
@@ -14,7 +13,7 @@ const openMenu = () => {
   document.querySelector('nav > ul').classList.add('mobile-nav');
   document.querySelector('nav').classList.add('nav-strech');
   document.querySelector('header > div').classList.add('visible');
-}
+};
 document.querySelector('nav>img').addEventListener('click', openMenu);
 const items = Array.from(document.querySelectorAll('ul > li a'));
 for (let i = 0; i < items.length; i += 1) {
