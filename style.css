@@ -17,8 +17,8 @@ body {
 
 header {
   background-color: #3c3a39;
-  height: 60px;
-  align-items: center;
+  min-height: 60px;
+  /* align-items: center; */
   display: flex;
   justify-content: space-between;
 }
@@ -33,6 +33,41 @@ header p {
 
 .logo a {
   text-decoration: none;
+}
+
+.mobile-menu {
+  min-height: 400px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  font-size: 2rem;
+  font-weight: bold;
+  /* align-items: baseline; */
+  padding: 0;
+  background-color: red;
+}
+
+.mobile-nav {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  display: inline-block;
+  list-style-type: none;
+}
+
+.mobile-nav li {
+  width: 100%;
+  border-bottom: 2px solid gray;
+}
+
+.mobile-nav li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visible {
+  display: none;
 }
 
 nav {
