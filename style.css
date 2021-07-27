@@ -21,7 +21,6 @@ body {
   color: var(--color-text);
 }
 
-
 header {
   background-color: #3c3a39;
   min-height: 60px;
@@ -61,7 +60,7 @@ header p {
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
-  display: inline-block;
+  display: inline;
   list-style-type: none;
 }
 
@@ -73,14 +72,19 @@ header p {
   border: none;
 }
 
+.closeBtn i {
+  display: none;
+}
+
+.icons-list li a i {
+  width: 20px;
+  height: 20px;
+}
+
 .mobile-nav .closeBtn i {
   display: inline;
   float: right;
   color: #5b5957;
-}
-
-.closeBtn i {
-  display: none;
 }
 
 .mobile-nav li {
@@ -548,11 +552,6 @@ button {
 .icons-list li a {
   color: inherit;
   text-decoration: inherit;
-}
-
-.icons-list li a i {
-  width: 20px;
-  height: 20px;
 }
 
 .line-2 {
