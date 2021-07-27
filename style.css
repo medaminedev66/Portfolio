@@ -3,6 +3,7 @@
   --font-Inter: "Inter", sans-serif;
   --font-Poppins: "Poppins", sans-serif;
   --font-Robot: "Roboto", sans-serif;
+  --color-text: #fff5e1;
 }
 
 * {
@@ -13,19 +14,24 @@
 
 body {
   font-family: var(--font-Inter);
+  padding:0;
+  margin: 0;
+}
+
+p {
+  color: var(--color-text);
 }
 
 header {
   background-color: #3c3a39;
   min-height: 60px;
-  /* align-items: center; */
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 header p {
   font-family: var(--font-inter);
-  color: white;
   font-size: 18px;
   padding-left: 20px;
   font-weight: 700;
@@ -36,7 +42,13 @@ header p {
 }
 
 .mobile-menu {
-  min-height: 400px;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
@@ -44,7 +56,7 @@ header p {
   font-weight: bold;
   /* align-items: baseline; */
   padding: 0;
-  background-color: red;
+  background-color: #3c3a39;
 }
 
 .mobile-nav {
@@ -54,16 +66,32 @@ header p {
   justify-content: flex-start;
   display: inline-block;
   list-style-type: none;
+  padding-top: 2rem;
+  padding-left: 2rem;
 }
 
+/* .fas {
+  display: none;
+} */
 .mobile-nav li {
   width: 100%;
-  border-bottom: 2px solid gray;
+  margin-bottom: 2rem;
+  margin-right: auto;
+  border-bottom: 2px solid rgb(221, 202, 202);
 }
 
 .mobile-nav li a {
   text-decoration: none;
-  color: inherit;
+  color: var(--color-text);
+}
+
+.mobile-nav li i {
+  color: var(--color-text);
+}
+
+.stop-scroll {
+  height: 100%;
+  overflow: hidden;
 }
 
 .visible {
@@ -111,7 +139,6 @@ main {
 .intro p {
   font-family: var(--font-Poppins);
   padding-top: 10px;
-  color: white;
   font-size: 16px;
 }
 
