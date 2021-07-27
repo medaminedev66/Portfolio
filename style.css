@@ -3,11 +3,12 @@
   --font-Inter: "Inter", sans-serif;
   --font-Poppins: "Poppins", sans-serif;
   --font-Robot: "Roboto", sans-serif;
+  --color-text: #fff5e1;
 }
 
 * {
-  margin: 0.1px;
-  padding: 0.1px;
+  margin: 0;
+  padding: 0;
   box-sizing: content-box;
 }
 
@@ -15,33 +16,102 @@ body {
   font-family: var(--font-Inter);
 }
 
+.logo a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
 header {
   background-color: #3c3a39;
-  height: 60px;
-  align-items: center;
+  min-height: 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 header p {
   font-family: var(--font-inter);
-  color: white;
   font-size: 18px;
   padding-left: 20px;
   font-weight: 700;
 }
 
-.logo a {
+.mobile-menu {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: #3c3a39;
+  align-items: flex-start;
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.mobile-nav {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+.nav-strech {
+  width: 100%;
+}
+
+.mobile-nav .closeBtn {
+  border: none;
+}
+
+.closeBtn i {
+  display: none;
+}
+
+.icons-list li a i {
+  width: 20px;
+  height: 20px;
+}
+
+.mobile-nav .closeBtn i {
+  display: inline;
+  float: right;
+  color: #5b5957;
+}
+
+.mobile-nav li {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid rgb(221, 202, 202);
+  padding-left: 0.5rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.4rem;
+}
+
+.mobile-nav li a {
   text-decoration: none;
+  color: var(--color-text);
+}
+
+.visible {
+  display: none;
 }
 
 nav {
-  margin-right: 20px;
+  align-items: center;
 }
 
 nav img {
   height: 24px;
   width: 24px;
+  margin-right: 1rem;
 }
 
 nav ul {
@@ -69,15 +139,15 @@ main {
 
 .intro h2 {
   font-family: var(--font-Robot);
-  color: white;
   font-size: 20px;
+  color: var(--color-text);
 }
 
 .intro p {
   font-family: var(--font-Poppins);
   padding-top: 10px;
-  color: white;
   font-size: 16px;
+  color: white;
 }
 
 .social-links {
@@ -481,11 +551,6 @@ button {
 .icons-list li a {
   color: inherit;
   text-decoration: inherit;
-}
-
-.icons-list li a i {
-  width: 20px;
-  height: 20px;
 }
 
 .line-2 {
