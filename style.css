@@ -16,6 +16,55 @@ body {
   font-family: var(--font-Inter);
 }
 
+/* Pop up styles */
+.popContainer{
+  overflow: auto;
+  position: fixed;
+  top:0;
+  left: 0;
+  /* transform: translate(-50%,-50%); */
+  z-index: 3;
+  background: rgb(172, 172, 172);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 15px;
+  min-height: 740px;
+  height: 80%;
+  /* min-height: 718px; */
+}
+
+.popTitle{
+  font-family: vqr(--font-Robot);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  padding-bottom: 3rem;
+}
+
+.popImage {
+ height: auto;
+ width: 100%;
+}
+
+.infoDiv{
+ margin-top: 30px;
+ margin-bottom: 0;
+}
+
+.popDescr{
+margin-top: 24px;
+font-family: var(--font-Inter);
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #344563;
+}
+/* pop up style done */
+
 .logo a {
   text-decoration: none;
   color: var(--color-text);
