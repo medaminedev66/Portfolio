@@ -17,35 +17,51 @@ body {
 }
 
 /* Pop up styles */
+
+.stopScroll {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .popContainer{
   overflow: auto;
   position: fixed;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  padding: 1rem;
+  border-radius: 5px;
   top:0;
   left: 0;
-  /* transform: translate(-50%,-50%); */
-  z-index: 3;
-  background: rgb(172, 172, 172);
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 16px;
-  margin-right: 16px;
-  padding: 15px;
-  min-height: 740px;
-  height: 80%;
-  /* min-height: 718px; */
+  z-index: 4;
+  background-color: #f1bbbb;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.popBtnClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: auto;
+  width:2rem;
+  height: 2rem;
 }
 
 .popTitle{
-  font-family: vqr(--font-Robot);
+  font-family: var(--font-Robot);
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  padding-bottom: 3rem;
+  font-size: 2rem;
 }
 
 .popImage {
- height: auto;
+ height: 40%;
  width: 100%;
 }
 
