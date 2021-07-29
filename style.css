@@ -18,6 +18,25 @@ body {
 
 /* Pop up styles */
 
+.popTech{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.popTech li{
+  list-style-type: none;
+  min-height: 31px;
+  width: auto;
+  border: 1px solid black;
+  margin-right: 1rem;
+  padding: 5px 5px 5px 5px;
+  font-family: var(--font-Poppins);
+  font-weight: 600;
+  font-size: 13px;
+  color: #3c3a39 ;
+}
+
 .stopScroll {
   width: 100vw;
   height: 100vh;
@@ -25,23 +44,19 @@ body {
 }
 
 .popContainer{
-  overflow: auto;
+  overflow-y: auto;
   position: fixed;
-  width: 90%;
+  /* min-height: 718px;*/
   height: 90%;
-  margin: auto;
-  margin-left: 2.5%;
-  margin-top: 2.5%;
+  height: auto;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 3%;
   padding: 1rem;
-  border-radius: 5px;
   top:0;
   left: 0;
   z-index: 4;
-  background-color: #f1bbbb;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  background-color: rgb(218, 218, 218);
 }
 
 .popBtnClose {
@@ -58,6 +73,9 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
+  height: auto;
+  margin-bottom: 3rem;
+  color: #172b4d;
 }
 
 .popImage {
@@ -72,12 +90,35 @@ body {
 
 .popDescr{
 margin-top: 24px;
+margin-bottom: 24px;
 font-family: var(--font-Inter);
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 24px;
 color: #344563;
+}
+
+.popBtn{
+  width: 130px;
+  min-height: 48px;
+  height: auto;
+  background-color: #ff6b00;
+  color: #ffffff;
+  padding-right: 12px;
+  padding-left: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn2{
+  float: right;
+}
+.btn1{
+  float: left;
 }
 /* pop up style done */
 

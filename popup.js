@@ -106,9 +106,10 @@ infoDiv.className = 'infoDiv';
 description.className = 'popDescr';
 image.className = 'popImage';
 technologies.className = 'popTec';
-btnOne.className = 'popBtn';
-btnTwo.className = 'popBtn';
+btnOne.className = 'popBtn btn1';
+btnTwo.className = 'popBtn btn2';
 btnClose.className += ' popBtnClose';
+technologies.className='popTech'
 
 // open the popup function
 
