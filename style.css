@@ -132,13 +132,14 @@ color: #344563;
   margin-left: 5px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 700px) {
   .infoDiv {
     display: flex;
+    flex-direction: row;
   }
 
   .descBtn {
-    width: 30%;
+    flex:1;
     margin-left: 30px;
     display: flex;
     flex-flow: column;
@@ -146,13 +147,24 @@ color: #344563;
   }
 
   .popDescr {
+    width: 100%;
     padding-top: 0;
     padding-bottom: 10%;
   }
 
   .popImage {
-    width: 50%;
+    flex: 2;
   }
+  
+  .popTitle {
+    font-size: 32px;
+  }
+
+  .popTech li{
+    font-size: 15px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
 }
 
 /* pop up style done */
