@@ -30,13 +30,13 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.popTech{
+.popTech {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.popTech li{
+.popTech li {
   list-style-type: none;
   padding: 5px;
   margin-right: 10px;
@@ -53,13 +53,13 @@ body {
   overflow: hidden;
 }
 
-.popContainer{
+.popContainer {
   overflow-y: auto;
   position: fixed;
   height: 90%;
   margin: 20px;
   padding: 20px;
-  top:0;
+  top: 0;
   left: 0;
   bottom: 0;
   z-index: 10;
@@ -71,7 +71,7 @@ body {
   top: 0;
   right: 0;
   margin: 5px;
-  width:2rem;
+  width: 2rem;
   height: 2rem;
 }
 
@@ -79,7 +79,7 @@ body {
   font-size: 20px;
 }
 
-.popTitle{
+.popTitle {
   font-family: var(--font-Robot);
   font-style: normal;
   font-weight: 700;
@@ -90,27 +90,27 @@ body {
 }
 
 .popImage {
- height: 20%;
- width: 100%;
+  height: 20%;
+  width: 100%;
 }
 
-.infoDiv{
- margin-top: 30px;
- margin-bottom: 0;
+.infoDiv {
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 .popDescr {
-margin-top: 16px;
-margin-bottom: 16px;
-font-family: var(--font-Inter);
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
-color: #344563;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-family: var(--font-Inter);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
 }
 
-.popBtn{
+.popBtn {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
@@ -121,11 +121,15 @@ color: #344563;
 
 .popBtn a {
   text-decoration: none;
-  background-color: #FF6B00;
-  color: #ffffff;
+  background-color: #ff6b00;
+  color: #fff;
   padding: 15px;
   margin-right: 10px;
   width: 40%;
+}
+
+.closeBtn i {
+  display: none;
 }
 
 .popBtn a i {
@@ -139,7 +143,7 @@ color: #344563;
   }
 
   .descBtn {
-    flex:1;
+    flex: 1;
     margin-left: 30px;
     display: flex;
     flex-flow: column;
@@ -155,16 +159,15 @@ color: #344563;
   .popImage {
     flex: 2;
   }
-  
+
   .popTitle {
     font-size: 32px;
   }
 
-  .popTech li{
+  .popTech li {
     font-size: 15px;
     padding: 0.5rem 1rem 0.5rem 1rem;
   }
-
 }
 
 /* pop up style done */
@@ -222,10 +225,6 @@ header p {
 
 .mobile-nav .closeBtn {
   border: none;
-}
-
-.closeBtn i {
-  display: none;
 }
 
 .icons-list li a i {
