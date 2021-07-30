@@ -5,7 +5,7 @@ function checkvalidation(sentencef) {
 }
 
 function validateEmail(email, input) {
-  const msg = input.parentNode.querySelector('small');
+  const msg = document.querySelector('small');
   if (checkvalidation(email)) {
     msg.innerText = 'The email should be in lower case';
     input.className = 'error';

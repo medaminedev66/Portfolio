@@ -630,13 +630,12 @@ button {
 
 .footer-form form label {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 small {
   padding: 1rem;
-  padding-top: 0;
   color: red;
 }
 
