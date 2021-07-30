@@ -630,22 +630,7 @@ button {
 
 .footer-form form label {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-}
-
-small {
-  padding: 1rem;
-  padding-top: 0;
-  color: red;
-}
-
-.error {
-  box-shadow: 0 3px rgb(255, 0, 0, 0.6);
-}
-
-.success {
-  border-bottom: 2px solid rgb(79, 221, 66);
 }
 
 .footer-form form label input {
@@ -659,7 +644,11 @@ small {
 }
 
 .footer-form form label input:focus {
-  border-bottom: 3px solid #ffbe90;
+  border-bottom: 3px solid #ff6b00;
+}
+
+.footer-form form label input:valid {
+  border-bottom: 3px solid greenyellow;
 }
 
 .footer-form form label textarea {
@@ -673,7 +662,7 @@ small {
 }
 
 .footer-form form label textarea:focus {
-  border-bottom: 3px solid #ffbe90;
+  border-bottom: 3px solid #ff6b00;
 }
 
 .footer-form form label textarea::placeholder {
