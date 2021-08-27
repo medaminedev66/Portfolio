@@ -16,7 +16,9 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YS1B6SHEZG"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { window.dataLayer.push(arguments); }
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'G-YS1B6SHEZG');
@@ -75,30 +77,62 @@
         <div class="line"></div>
       </div>
       <div class="my-recent-work">
-        <img class="placeholder" src="img/Placeholder.png" alt="Image of personalized reads website" />
+        <img class="placeholder" src="img/projects/conference-mobile.png" alt="Image of personalized reads website" />
         <div class="content1 one">
-          <h3>Multi-Post Stories</h3>
+          <h3>Conference Website</h3>
           <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a standard
-            dummy text.
+            This project is based on an online website for a Facebook instant games conference.
           </p>
           <ul class="used-languages">
-            <li class="btn-language">css</li>
-            <li class="btn-language">html</li>
-            <li class="btn-language">bootstrap</li>
-            <li class="btn-language">Ruby</li>
+            <li class="btn-language">CSS</li>
+            <li class="btn-language">HTML</li>
+            <li class="btn-language">JavaScript</li>
           </ul>
-          <button id='0' class="btn-project">See Project</button>
+          <button id="0" class="btn-project">See Project</button>
         </div>
       </div>
     </section>
     <section class="big-project">
       <div class="project empty">
-        <button id='1' class="see-Project">See Project</button>
+        <button id="1" class="see-Project">See Project</button>
       </div>
-      <div id='2' class="project two">
+      <div id="2" class="project two">
+        <h3>Conference Website</h3>
+        <p>
+          This project is based on an online website for a Facebook instant games conference.
+        </p>
+        <ul class="languages">
+          <li class="btn-lng">HTML</li>
+          <li class="btn-lng">JavaScript</li>
+          <li class="btn-lng">CSS</li>
+        </ul>
+        <button class="see-Project">See Project</button>
+      </div>
+      <div id="3" class="project three">
+        <h3>My personal portfolio</h3>
+        <p>
+          This is a practice project about building a mobile and website version of my portfolio.
+        </p>
+        <ul class="languages">
+          <li class="btn-lng">HTML</li>
+          <li class="btn-lng">CSS</li>
+          <li class="btn-lng">JavaScript</li>
+        </ul>
+        <button class="see-Project">See Project</button>
+      </div>
+      <div id="4" class="project four">
+        <h3>Awesome Books Project</h3>
+        <p>
+          A simple App that allows a user to efficiently organize all their books.
+        </p>
+        <ul class="languages">
+          <li class="btn-lng">JavaScript</li>
+          <li class="btn-lng">DOM</li>
+          <li class="btn-lng">CSS</li>
+        </ul>
+        <button class="see-Project">See Project</button>
+      </div>
+      <div id="5" class="project five">
         <h3>Profesional Art Printing Data</h3>
         <p>
           A daily selection of privately personalized reads; no accounts or
@@ -111,46 +145,7 @@
         </ul>
         <button class="see-Project">See Project</button>
       </div>
-      <div id='3' class="project three">
-        <h3>Profesional Art Printing Data</h3>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard
-        </p>
-        <ul class="languages">
-          <li class="btn-lng">html</li>
-          <li class="btn-lng">Ruby</li>
-          <li class="btn-lng">bootstrap</li>
-        </ul>
-        <button class="see-Project">See Project</button>
-      </div>
-      <div id='4' class="project four">
-        <h3>Profesional Art Printing Data</h3>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard
-        </p>
-        <ul class="languages">
-          <li class="btn-lng">html</li>
-          <li class="btn-lng">Ruby</li>
-          <li class="btn-lng">bootstrap</li>
-        </ul>
-        <button class="see-Project">See Project</button>
-      </div>
-      <div id='5' class="project five">
-        <h3>Profesional Art Printing Data</h3>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard
-        </p>
-        <ul class="languages">
-          <li class="btn-lng">html</li>
-          <li class="btn-lng">Ruby</li>
-          <li class="btn-lng">bootstrap</li>
-        </ul>
-        <button class="see-Project">See Project</button>
-      </div>
-      <div id='6' class="project six">
+      <div id="6" class="project six">
         <h3>Profesional Art Printing Data</h3>
         <p>
           A daily selection of privately personalized reads; no accounts or
@@ -217,9 +212,9 @@
       </p>
       <form action="https://formspree.io/f/mdoylewg" method="POST" id="contactme">
         <label for="full-name">
-          <input type="text" name="full name" id="full-name" maxlength="30" placeholder="Full name" required />
+          <input type="text" name="full name" id="name" maxlength="30" placeholder="Full name" required />
         </label>
-        <label for="email">
+        <label for="email-address">
           <input type="email" name="email-address" id="email" placeholder="Email adresses" required />
         </label>
         <label for="comment">
@@ -256,6 +251,7 @@
   <script src="./menu.js"></script>
   <script src="./popup.js"></script>
   <script src="./form-validation.js"></script>
+  <script src="./web-storage.js"></script>
 </body>
 
 </html>
