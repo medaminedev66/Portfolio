@@ -459,7 +459,7 @@ button {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  margin: 0.1px 24px 0.1px 24px;
+  margin: 0 24px 0 24px;
   min-height: 356px;
   height: auto;
   min-width: 327px;
@@ -474,6 +474,7 @@ button {
   height: auto;
   padding-left: 12px;
   margin-top: 100px;
+  margin-bottom: 1rem;
 }
 
 .project p {
@@ -482,6 +483,7 @@ button {
   line-height: 20px;
   padding-left: 12px;
   margin-top: 5px;
+  margin-bottom: 0.8rem;
 }
 
 .languages {
@@ -501,14 +503,11 @@ button {
 }
 
 .see-Project {
-  position: static;
-  bottom: 0.1px;
   background: #ff6b00;
   border: none;
   color: white;
   min-width: 327px;
   height: 50px;
-  align-items: center;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -741,8 +740,8 @@ small {
 .two {
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.658),
-      rgba(59, 59, 59, 0.863)
+      rgba(118, 118, 118, 0.1),
+      rgba(0, 0, 0, 0.9)
     ),
     url(./img/projects/conference-mobile.png);
 }
@@ -750,17 +749,18 @@ small {
 .three {
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.87),
-      rgba(59, 59, 59, 0.863)
+      rgba(123, 123, 123, 0.1),
+      rgba(0, 0, 0, 0.9)
     ),
-    url(./img/projects/portfolio-mobile.JPG);
+    url(./img/projects/portfolio-desktop.JPG);
+  background-position: right;
 }
 
 .four {
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.87),
-      rgba(59, 59, 59, 0.863)
+      rgba(86, 86, 86, 0.1),
+      rgba(0, 0, 0, 0.9)
     ),
     url(./img/projects/books.png);
 }
@@ -894,10 +894,10 @@ small {
   }
 
   .project {
+    justify-content: flex-end;
     height: auto;
     width: 312px;
     min-height: 386px;
-    margin: 0.1px;
   }
 
   .about-me {
