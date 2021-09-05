@@ -56,8 +56,8 @@ body {
 .popContainer {
   overflow-y: auto;
   position: fixed;
-  height: 90%;
-  margin: 20px;
+  height: auto;
+  margin: 3rem 7rem 3rem 7rem;
   padding: 20px;
   top: 0;
   left: 0;
@@ -140,11 +140,13 @@ body {
   .infoDiv {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
   }
 
   .descBtn {
     flex: 1;
-    margin-left: 30px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -152,13 +154,14 @@ body {
 
   .popDescr {
     width: 100%;
+    min-width: 350px;
     padding-top: 0;
     padding-bottom: 10%;
   }
 
   .popImage {
     flex: 2;
-    max-width: 700px;
+    max-width: 600px;
   }
 
   .popTitle {
@@ -736,20 +739,29 @@ small {
 }
 
 .two {
-  background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.658), rgba(59, 59, 59, 0.863)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.658),
+      rgba(59, 59, 59, 0.863)
+    ),
     url(./img/projects/conference-mobile.png);
 }
 
 .three {
-  background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.87), rgba(59, 59, 59, 0.863)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.87),
+      rgba(59, 59, 59, 0.863)
+    ),
     url(./img/projects/portfolio-mobile.JPG);
 }
 
 .four {
-  background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.87), rgba(59, 59, 59, 0.863)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.87),
+      rgba(59, 59, 59, 0.863)
+    ),
     url(./img/projects/books.png);
 }
 
