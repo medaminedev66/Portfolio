@@ -738,7 +738,8 @@ small {
 }
 
 .two {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to bottom,
       rgba(118, 118, 118, 0.1),
       rgba(0, 0, 0, 0.9)
@@ -747,7 +748,8 @@ small {
 }
 
 .three {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to bottom,
       rgba(123, 123, 123, 0.1),
       rgba(0, 0, 0, 0.9)
@@ -757,7 +759,8 @@ small {
 }
 
 .four {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to bottom,
       rgba(86, 86, 86, 0.1),
       rgba(0, 0, 0, 0.9)
@@ -845,7 +848,6 @@ small {
   .my-recent-work {
     display: flex;
     flex-flow: row;
-    /* align-items: stretch; */
     justify-content: flex-start;
     grid-column: 1/4;
     grid-row: 2;
