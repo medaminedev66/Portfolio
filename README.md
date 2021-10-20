@@ -24,7 +24,6 @@ Right click and open the index.html in your browser to view
 👤 **Amine**
 
 - GitHub: [@githubhandle](https://github.com/medaminedev66)
-- Twitter: [@twitterhandle](https://twitter.com/eedmakula)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohammed-amine-smahi-1b8615187)
 
 

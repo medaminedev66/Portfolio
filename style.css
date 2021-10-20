@@ -1,8 +1,8 @@
 :root {
-  --font-Crete: "Crete Round", serif;
-  --font-Inter: "Inter", sans-serif;
-  --font-Poppins: "Poppins", sans-serif;
-  --font-Robot: "Roboto", sans-serif;
+  --font-Crete: 'Crete Round', serif;
+  --font-Inter: 'Inter', sans-serif;
+  --font-Poppins: 'Poppins', sans-serif;
+  --font-Robot: 'Roboto', sans-serif;
   --color-text: #fff5e1;
 }
 
@@ -56,8 +56,8 @@ body {
 .popContainer {
   overflow-y: auto;
   position: fixed;
-  height: 90%;
-  margin: 20px;
+  height: auto;
+  margin: 3rem 7rem 3rem 7rem;
   padding: 20px;
   top: 0;
   left: 0;
@@ -140,11 +140,13 @@ body {
   .infoDiv {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
   }
 
   .descBtn {
     flex: 1;
-    margin-left: 30px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -152,12 +154,14 @@ body {
 
   .popDescr {
     width: 100%;
+    min-width: 350px;
     padding-top: 0;
     padding-bottom: 10%;
   }
 
   .popImage {
     flex: 2;
+    max-width: 600px;
   }
 
   .popTitle {
@@ -178,11 +182,13 @@ body {
 }
 
 header {
+  width: 100%;
   background-color: #3c3a39;
   min-height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 header p {
@@ -378,6 +384,7 @@ button {
   height: auto;
   margin: 24px auto 24px auto;
   width: 100%;
+  border-radius: 3px;
 }
 
 .my-recent-work h3 {
@@ -452,7 +459,7 @@ button {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  margin: 0.1px 24px 0.1px 24px;
+  margin: 0 24px 0 24px;
   min-height: 356px;
   height: auto;
   min-width: 327px;
@@ -467,6 +474,7 @@ button {
   height: auto;
   padding-left: 12px;
   margin-top: 100px;
+  margin-bottom: 1rem;
 }
 
 .project p {
@@ -475,6 +483,7 @@ button {
   line-height: 20px;
   padding-left: 12px;
   margin-top: 5px;
+  margin-bottom: 0.8rem;
 }
 
 .languages {
@@ -494,14 +503,11 @@ button {
 }
 
 .see-Project {
-  position: static;
-  bottom: 0.1px;
   background: #ff6b00;
   border: none;
   color: white;
   min-width: 327px;
   height: 50px;
-  align-items: center;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -728,7 +734,38 @@ small {
 .empty {
   display: none;
   background: url(/img/Placeholder4.png);
-  border: 2px solid black;
+  border: 1px solid black;
+}
+
+.two {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(118, 118, 118, 0.1),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(./img/projects/conference-mobile.png);
+}
+
+.three {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(123, 123, 123, 0.1),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(./img/projects/portfolio-desktop.JPG);
+  background-position: right;
+}
+
+.four {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(86, 86, 86, 0.1),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(./img/projects/books.png);
 }
 
 @media screen and (min-width: 720px) {
@@ -811,7 +848,6 @@ small {
   .my-recent-work {
     display: flex;
     flex-flow: row;
-    align-items: stretch;
     justify-content: flex-start;
     grid-column: 1/4;
     grid-row: 2;
@@ -822,7 +858,7 @@ small {
     display: flex;
     flex-direction: column;
     margin: 0.1px 24px 0.1px 0.1px;
-    max-width: 448px;
+    max-width: 360px;
   }
 
   .placeholder {
@@ -831,7 +867,7 @@ small {
     margin: 0.1px 10px 24px 0.1px;
     width: 100%;
     height: auto;
-    max-width: 684px;
+    max-width: 1000px;
   }
 
   .content1 p {
@@ -851,19 +887,19 @@ small {
 
   .big-project {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(327px, 327px));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
     padding-left: 24px;
     padding-right: 24px;
-    grid-gap: 5px;
+    grid-gap: 0.8rem;
     padding-bottom: 130px;
     padding-top: 24px;
   }
 
   .project {
+    justify-content: flex-end;
     height: auto;
-    width: 327px;
+    width: 312px;
     min-height: 386px;
-    margin: 0.1px;
   }
 
   .about-me {
@@ -939,14 +975,15 @@ small {
   }
 
   .project {
-    width: 369px;
+    /* width: 320px; */
     min-height: 435px;
     height: auto;
     margin: 0.1px;
   }
 
   .big-project {
-    grid-template-columns: repeat(auto-fit, 369px);
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 0.8rem;
     padding-left: 141px;
     padding-right: 141px;
   }
@@ -959,5 +996,6 @@ small {
     right: 0.1px;
     width: 662px;
     height: 875px;
+    z-index: 3;
   }
 }
