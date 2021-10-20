@@ -5,7 +5,7 @@ This is a practice project about building a mobile and website version of my por
 
 ## Built With
 
-- Major languages : Html & Css
+- Major languages : Html, Css, JavaScript
 - No Frameworks
 
 ## Live Demo
