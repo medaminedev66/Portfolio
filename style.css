@@ -57,7 +57,7 @@ body {
   overflow-y: auto;
   position: fixed;
   height: auto;
-  margin: 3rem 7rem 3rem 7rem;
+  margin: 1rem;
   padding: 20px;
   top: 0;
   left: 0;
@@ -115,7 +115,7 @@ body {
   justify-content: space-between;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 13px;
   text-align: center;
 }
 
@@ -137,6 +137,10 @@ body {
 }
 
 @media screen and (min-width: 700px) {
+  .popContainer {
+    margin: 3rem 7rem 3rem 7rem;
+  }
+
   .infoDiv {
     display: flex;
     flex-direction: row;
@@ -182,19 +186,18 @@ body {
 }
 
 header {
-  width: 100%;
   background-color: #3c3a39;
   min-height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+  padding: 0 1rem;
 }
 
 header p {
   font-family: var(--font-inter);
   font-size: 18px;
-  padding-left: 20px;
   font-weight: 700;
 }
 
@@ -269,7 +272,6 @@ nav {
 nav img {
   height: 24px;
   width: 24px;
-  margin-right: 1rem;
 }
 
 nav ul {
@@ -339,29 +341,17 @@ button {
 }
 
 .my-projects {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  grid-template-columns: 1fr;
-  min-width: 375px;
-  padding: 120px 0.1px 0.1px 0.1px;
-  justify-content: center;
-  grid-gap: 5px;
-}
-
-.big-project {
-  display: grid;
-  background-color: white;
-  grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
-  padding: 0.1px 0.1px 120px 0.1px;
-  justify-content: space-between;
-  grid-gap: 10px;
+  padding-top: 7.5rem;
+  gap: 5px;
 }
 
 .my-recent-work {
   display: flex;
   flex-direction: column;
   margin: 80px 24px 24px 24px;
-  height: min-content;
 }
 
 .title1 h2 {
@@ -372,15 +362,17 @@ button {
   line-height: 52px;
 }
 
-.line {
-  border-bottom: 2px solid #e5e5e5;
-  padding-left: 24px;
-  padding-right: 24px;
+hr {
+  height: 2px;
+  margin-left: 24px;
+  margin-right: 24px;
   margin-top: 30px;
+  border-width: 0;
+  color: gray;
+  background-color: gray;
 }
 
 .placeholder {
-  min-width: 327px;
   height: auto;
   margin: 24px auto 24px auto;
   width: 100%;
@@ -398,7 +390,7 @@ button {
   font-size: 16px;
   line-height: 24px;
   align-items: center;
-  margin: 5px 0.1px;
+  margin: 5px 0;
 }
 
 .my-recent-work ul {
@@ -430,28 +422,30 @@ button {
 
 .btn-project {
   background: #ff6b00;
-  border: none;
   color: white;
-  position: static;
-  left: 0.1px;
   max-width: 128px;
   min-height: 48px;
-  height: auto;
-  margin: 5px 0.1px;
-  align-items: center;
+  margin: 5px 0;
   font-weight: 700;
   font-size: 17px;
-  line-height: 24px;
   padding: 3px 10px;
   cursor: pointer;
 }
 
 .btn-project:active {
-  background: white;
+  background: rgb(255, 196, 0);
 }
 
 .btn-project:hover {
   background-color: orange;
+}
+
+.big-project {
+  display: grid;
+  background-color: white;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1.5rem;
+  padding: 0 24px 120px 24px;
 }
 
 .project {
@@ -459,21 +453,15 @@ button {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  margin: 0 24px 0 24px;
-  min-height: 356px;
-  height: auto;
-  min-width: 327px;
+  min-height: 24rem;
+  justify-content: flex-end;
 }
 
 .project h3 {
   font-family: var(--font-Crete);
   color: white;
   font-size: 32px;
-  line-height: 44px;
-  min-height: 81px;
-  height: auto;
   padding-left: 12px;
-  margin-top: 100px;
   margin-bottom: 1rem;
 }
 
@@ -504,13 +492,10 @@ button {
 
 .see-Project {
   background: #ff6b00;
-  border: none;
   color: white;
-  min-width: 327px;
   height: 50px;
   font-weight: 700;
   font-size: 17px;
-  line-height: 24px;
   cursor: pointer;
 }
 
@@ -524,11 +509,11 @@ button {
 }
 
 .about-me {
-  background-color: black;
+  background-color: #262626;
   display: flex;
   flex-direction: column;
   color: bisque;
-  padding: 0.1px 24px;
+  padding: 0 24px;
   padding-bottom: 130px;
 }
 
@@ -738,8 +723,7 @@ small {
 }
 
 .two {
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to bottom,
       rgba(118, 118, 118, 0.1),
       rgba(0, 0, 0, 0.9)
@@ -748,8 +732,7 @@ small {
 }
 
 .three {
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to bottom,
       rgba(123, 123, 123, 0.1),
       rgba(0, 0, 0, 0.9)
@@ -759,8 +742,7 @@ small {
 }
 
 .four {
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to bottom,
       rgba(86, 86, 86, 0.1),
       rgba(0, 0, 0, 0.9)
@@ -769,18 +751,20 @@ small {
 }
 
 @media screen and (min-width: 720px) {
+  header {
+    padding: 0 10rem;
+  }
+
   .see-Project {
     display: none;
   }
 
   .logo {
-    margin-left: 141px;
-    flex: 2;
+    flex: 1;
   }
 
   nav {
     flex: 1;
-    margin-right: 50px;
   }
 
   nav img {
@@ -833,41 +817,42 @@ small {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0.1px 0.1px 114px 0.1px;
+    margin: 0 0 0 0;
     grid-column: 1/4;
     grid-row: 1;
   }
 
-  .line {
+  hr {
     max-width: 794px;
     width: 100%;
-    margin-top: 0.1px;
-    border-bottom: 2px solid #212121;
+    margin-top: 0;
+    height: 2px;
+    color: #212121;
   }
 
   .my-recent-work {
     display: flex;
     flex-flow: row;
     justify-content: flex-start;
-    grid-column: 1/4;
-    grid-row: 2;
-    margin: 0.1px 0.1px 0.1px 0.1px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .content1 {
     display: flex;
     flex-direction: column;
-    margin: 0.1px 24px 0.1px 0.1px;
+    margin: 0 24px 0 0;
     max-width: 360px;
   }
 
   .placeholder {
     order: -1;
     align-self: flex-start;
-    margin: 0.1px 10px 24px 0.1px;
+    margin: 0 10px 24px 0;
     width: 100%;
     height: auto;
     max-width: 1000px;
+    min-width: 327px;
   }
 
   .content1 p {
@@ -879,27 +864,24 @@ small {
   }
 
   .my-projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 100%);
-    padding-left: 24px;
-    padding-right: 24px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .big-project {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
-    padding-left: 24px;
-    padding-right: 24px;
-    grid-gap: 0.8rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.3rem;
     padding-bottom: 130px;
-    padding-top: 24px;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .project {
     justify-content: flex-end;
     height: auto;
-    width: 312px;
-    min-height: 386px;
   }
 
   .about-me {
@@ -970,22 +952,12 @@ small {
 
 @media screen and (min-width: 1024px) {
   .my-projects {
-    padding-left: 141px;
-    padding-right: 141px;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   .project {
-    /* width: 320px; */
-    min-height: 435px;
-    height: auto;
-    margin: 0.1px;
-  }
-
-  .big-project {
-    grid-template-columns: repeat(auto-fit, 300px);
-    grid-gap: 0.8rem;
-    padding-left: 141px;
-    padding-right: 141px;
+    margin: 0;
   }
 }
 
@@ -993,9 +965,16 @@ small {
   .vector1 {
     position: absolute;
     top: 70px;
-    right: 0.1px;
+    right: 0;
     width: 662px;
     height: 875px;
     z-index: 3;
+  }
+
+  .big-project {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.3rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
