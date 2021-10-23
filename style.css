@@ -336,8 +336,7 @@ button {
 }
 
 .vector1 {
-  width: 10px;
-  height: 10px;
+  display: none;
 }
 
 .my-projects {
@@ -576,15 +575,18 @@ hr {
 
 .skills {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   text-align: center;
 }
 
 .skills h3 {
   color: white;
-  font-size: 50px;
+  font-size: 32px;
   margin-bottom: 45px;
+}
+
+.skills h3 i {
+  color: #ff6b00;
 }
 
 .skills ul li {
@@ -906,6 +908,15 @@ small {
     align-items: flex-start;
     margin-bottom: 130px;
     flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .skills {
+    text-align: left;
+  }
+
+  .skills h3 {
+    font-size: 32px;
   }
 
   .footer-form {
@@ -963,6 +974,7 @@ small {
 
 @media screen and (min-width: 1200px) {
   .vector1 {
+    display: block;
     position: absolute;
     top: 70px;
     right: 0;
