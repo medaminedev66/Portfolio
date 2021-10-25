@@ -2,7 +2,7 @@ const projects = [
   {
     title: 'Conference Website',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: '/img/projects/conference-mobile.png',
+    image: 'img/projects/conference-mobile.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standardA daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
@@ -20,21 +20,22 @@ const projects = [
     alt: 'alternative text',
   },
   {
-    title: 'Conference Website',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: '/img/projects/conference-mobile.png',
+    title: 'Countries of all the World',
+    technologies: ['Css', 'Bootsrap', 'React', 'Redux'],
+    image: 'img/projects/countries.PNG',
     description:
-      'This project is based on an online website for a Facebook instant games conference',
-    liveLink: 'https://medaminedev66.github.io/Portfolio/',
-    sourceLink: 'https://github.com/medaminedev66/Portfolio',
+      'This React capstone project is about building a mobile web application to check a list of metrics using React and Redux. I selected an API that provides numeric data about countries then I built the webapp around it. The webapp has several pages: \n \
+- Home page with a list of countries that could be filtered by some parameters(Region, population...) and a random country at the top. \n- The detail page for the country details; in the screenshot, the detail page for the Cook Islands country with its information(Capital, Population, Currency, Region...).',
+    liveLink: '#',
+    sourceLink: '#',
     alt: 'alternative text',
   },
   {
-    title: 'My personal portfolio',
-    technologies: ['Html', 'Css', 'JavaScript'],
-    image: 'img/projects/portfolio-desktop.JPG',
+    title: 'Conference Website',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    image: 'img/projects/conference-mobile.png',
     description:
-      'This is a practice project about building a mobile and website version of my portfolio.',
+      'This project is based on an online website for a Facebook instant games conference',
     liveLink: 'https://medaminedev66.github.io/Portfolio/',
     sourceLink: 'https://github.com/medaminedev66/Portfolio',
     alt: 'alternative text',
@@ -50,13 +51,13 @@ const projects = [
     alt: 'alternative text',
   },
   {
-    title: 'Profesional Art Printing Data 6',
-    technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/Placeholder.png',
+    title: 'My personal portfolio',
+    technologies: ['Html', 'Css', 'JavaScript'],
+    image: 'img/projects/portfolio-desktop.JPG',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
-    liveLink: '#',
-    sourceLink: '#',
+      'This is a practice project about building a mobile and website version of my portfolio.',
+    liveLink: 'https://medaminedev66.github.io/Portfolio/',
+    sourceLink: 'https://github.com/medaminedev66/Portfolio',
     alt: 'alternative text',
   },
   {
