@@ -740,8 +740,8 @@ small {
 .two {
   background-image: linear-gradient(
       to bottom,
-      rgba(118, 118, 118, 0.1),
-      rgba(0, 0, 0, 0.9)
+      rgba(0, 0, 0, 0.459),
+      rgba(0, 0, 0, 0.473)
     ),
     url(./img/projects/conference-mobile.png);
 }
@@ -749,8 +749,8 @@ small {
 .three {
   background-image: linear-gradient(
       to bottom,
-      rgba(123, 123, 123, 0.1),
-      rgba(77, 77, 77, 0.9)
+      rgba(0, 0, 0, 0.116),
+      rgba(0, 0, 0, 0.466)
     ),
     url(./img/projects/portfolio-desktop.JPG);
   background-position: right;
@@ -759,8 +759,8 @@ small {
 .four {
   background-image: linear-gradient(
       to bottom,
-      rgba(86, 86, 86, 0.1),
-      rgba(63, 63, 63, 0.9)
+      rgba(0, 0, 0, 0.418),
+      rgba(0, 0, 0, 0.445)
     ),
     url(./img/projects/books.png);
 }
@@ -768,10 +768,19 @@ small {
 .five {
   background-image: linear-gradient(
       to bottom,
-      rgba(160, 160, 160, 0.1),
-      rgb(46, 46, 46)
+      rgba(0, 0, 0, 0.678),
+      rgba(0, 0, 0, 0.664)
     ),
     url(./img/projects/countries.PNG);
+}
+
+.six {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(54, 54, 54, 0.822),
+      rgb(0, 0, 0)
+    ),
+    url(/img/Placeholder4.png);
 }
 
 @media screen and (min-width: 720px) {
@@ -1039,10 +1048,8 @@ small {
   .vector1 {
     display: block;
     position: absolute;
-    top: 70px;
+    top: 60px;
     right: 0;
-    /* width: 662px;
-    height: 875px; */
     z-index: 3;
   }
 
