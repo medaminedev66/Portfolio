@@ -5,19 +5,25 @@ const projects = [
     image: 'img/projects/conference-mobile.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standardA daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
-    liveLink: '#',
-    sourceLink: '#',
-    alt: 'alternative text',
+    liveLink: 'https://medaminedev66.github.io/Conference-page/',
+    sourceLink: 'https://github.com/medaminedev66/Conference-page',
+    alt: 'Conference Website',
   },
   {
-    title: 'Profesional Art Printing Data 2',
-    technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/Placeholder.png',
+    title: 'Javascript Capstone',
+    technologies: ['Html', 'Css', 'JavaScript', 'Webpack'],
+    image: 'img/projects/world-food.png',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
-    liveLink: '#',
-    sourceLink: '#',
-    alt: 'alternative text',
+      'The JavaScript capstone project (World Food) is about building our own web application based on an external API. The webapp have 2 user interfaces: \n \
+      - A Home Page displying items that you can like \n \
+      - A Comment button on home page display a Popup window with more detail about item. \n \
+      - In Popup user can add comments and it will be prserved in API.\n \
+      - We use an API that provides data about food and we make our webiste accoding to the data. Meals DB \n \
+      - In this project we practice to give review to each other. \n \
+      - We follow Gitflow for this project and solve git conflicts',
+    liveLink: 'https://medaminedev66.github.io/javascript-capstone/',
+    sourceLink: 'https://github.com/medaminedev66/javascript-capstone',
+    alt: 'Javascript Capstone',
   },
   {
     title: 'Countries of all the World',
@@ -26,8 +32,8 @@ const projects = [
     description:
       'This React capstone project is about building a mobile web application to check a list of metrics using React and Redux. I selected an API that provides numeric data about countries then I built the webapp around it. The webapp has several pages: \n \
 - Home page with a list of countries that could be filtered by some parameters(Region, population...) and a random country at the top. \n- The detail page for the country details; in the screenshot, the detail page for the Cook Islands country with its information(Capital, Population, Currency, Region...).',
-    liveLink: '#',
-    sourceLink: '#',
+    liveLink: 'https://medaminedev66.github.io/countries-of-the-world/',
+    sourceLink: 'https://github.com/medaminedev66/countries-of-the-world',
     alt: 'alternative text',
   },
   {
@@ -36,8 +42,8 @@ const projects = [
     image: 'img/projects/conference-mobile.png',
     description:
       'This project is based on an online website for a Facebook instant games conference',
-    liveLink: 'https://medaminedev66.github.io/Portfolio/',
-    sourceLink: 'https://github.com/medaminedev66/Portfolio',
+    liveLink: 'https://medaminedev66.github.io/Conference-page/',
+    sourceLink: 'https://github.com/medaminedev66/Conference-page',
     alt: 'alternative text',
   },
   {
@@ -61,13 +67,21 @@ const projects = [
     alt: 'alternative text',
   },
   {
-    title: 'Profesional Art Printing Data 7',
-    technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/Placeholder.png',
+    title: 'Books store',
+    technologies: ['React', 'JavaScript', 'Bootsrap', 'CSS'],
+    image: 'img/projects/books-store.png',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
-    liveLink: '#',
-    sourceLink: '#',
+      'In the Bookstore website you can: \n \
+      - Display a list of books.\n \
+      - Add a book.\n \
+      - Remove a selected book.\n \
+      Built With\n \
+      - React\n \
+      - JavaScript\n \
+      - CSS\n \
+      - Bootstrap',
+    liveLink: 'https://medaminedev66.github.io/bookstore/',
+    sourceLink: 'https://github.com/medaminedev66/bookstore',
     alt: 'alternative text',
   },
 ];

@@ -737,6 +737,15 @@ small {
   border: 1px solid black;
 }
 
+.first {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.459),
+      rgba(0, 0, 0, 0.473)
+    ),
+    url(./img/projects/world-food.png);
+}
+
 .two {
   background-image: linear-gradient(
       to bottom,
@@ -780,7 +789,7 @@ small {
       rgba(54, 54, 54, 0.822),
       rgb(0, 0, 0)
     ),
-    url(/img/Placeholder4.png);
+    url(./img/projects/books-store.png);
 }
 
 @media screen and (min-width: 720px) {
