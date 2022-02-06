@@ -68,15 +68,48 @@ body {
   bottom: 0;
   z-index: 10;
   background-color: rgb(255, 255, 255);
+  animation: drop 0.5s ease forwards;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(100%);
+  }
+
+  70% {
+    transform: translateY(-20%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.popContainer::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+.popContainer::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px grey;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.popContainer::-webkit-scrollbar-thumb {
+  background: #cdc3b6;
+  border-radius: 10px;
 }
 
 .popBtnClose {
   position: absolute;
-  top: 0;
-  right: 0;
+  z-index: 999;
+  top: 5px;
+  right: 10px;
   margin: 5px;
   width: 2rem;
   height: 2rem;
+  justify-self: end;
 }
 
 .popBtnClose i {
@@ -1042,14 +1075,36 @@ small {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .my-projects {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .project {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .intro p {
+    max-width: 400px;
+  }
+
+  .vector1 {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 3;
+    width: 50%;
+  }
+
+  .big-project {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.3rem;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
@@ -1060,12 +1115,6 @@ small {
     top: 60px;
     right: 0;
     z-index: 3;
-  }
-
-  .big-project {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2.3rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    width: 60%;
   }
 }

@@ -114,8 +114,8 @@ descBtn.appendChild(description);
 descBtn.appendChild(btn);
 infoDiv.appendChild(image);
 infoDiv.appendChild(descBtn);
-container.appendChild(title);
 container.appendChild(btnClose);
+container.appendChild(title);
 container.appendChild(technologies);
 container.appendChild(infoDiv);
 
@@ -138,7 +138,7 @@ image.className = 'popImage';
 descBtn.className = 'descBtn';
 technologies.className = 'popTec';
 btn.className = 'popBtn';
-btnClose.className += ' popBtnClose';
+btnClose.className += 'popBtnClose';
 technologies.className = 'popTech';
 overlay.className = 'popOverlay';
 
@@ -147,7 +147,7 @@ overlay.className = 'popOverlay';
 const popOpen = (index) => {
   document.body.appendChild(container);
   document.body.appendChild(overlay);
-  document.body.className = ' stopScroll';
+  document.body.className = 'stopScroll';
   title.innerText = projects[index].title;
   for (let i = 0; i < projects[index].technologies.length; i += 1) {
     const li = document.createElement('li');
