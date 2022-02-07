@@ -86,6 +86,31 @@ const projects = [
   },
 ];
 
+const getType = (id) => {
+  let type = 'none';
+  switch (id) {
+    case 1:
+      type = 'first';
+      break;
+    case 2:
+      type = 'two';
+      break;
+    case 3:
+      type = 'three';
+      break;
+    case 4:
+      type = 'four';
+      break;
+    case 5:
+      type = 'five';
+      break;
+    case 6:
+      type = 'six';
+      break;
+  }
+  return type;
+};
+
 // Create Html Elements
 
 const container = document.createElement('div');
@@ -161,12 +186,45 @@ const popOpen = (index) => {
   btnTwo.href = projects[index].sourceLink;
 };
 
+// Show see project button
+const showButton = (id) => {
+  const type = getType(id);
+
+  document.getElementById(`b-${id}`).classList.add('show');
+  document.getElementById(`h-${id}`).classList.add('visible');
+  document.getElementById(`p-${id}`).classList.add('visible');
+  document.getElementById(`u-${id}`).classList.add('visible');
+  document.getElementById(`${id}`).classList.add(`${type}-new`);
+};
+
+const removeButton = (id) => {
+  const type = getType(id);
+
+  document.getElementById(`b-${id}`).classList.remove('show');
+  document.getElementById(`h-${id}`).classList.remove('visible');
+  document.getElementById(`p-${id}`).classList.remove('visible');
+  document.getElementById(`u-${id}`).classList.remove('visible');
+  document.getElementById(`${id}`).classList.remove(`${type}-new`);
+};
 // Add listeners to popup elements
 
 for (let i = 0; i <= 6; i += 1) {
-  document.getElementById(i).addEventListener('click', () => {
-    popOpen(i);
+  document.getElementById(i).addEventListener('mouseover', () => {
+    showButton(i);
   });
+
+  document.getElementById(i).addEventListener('mouseout', () => {
+    removeButton(i);
+  });
+  if (i > 0) {
+    document.getElementById(`b-${i}`).addEventListener('click', () => {
+      popOpen(i);
+    });
+  } else {
+    document.getElementById(i).addEventListener('click', () => {
+      popOpen(i);
+    });
+  }
 }
 // closing the popup function
 
