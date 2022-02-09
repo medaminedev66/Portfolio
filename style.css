@@ -593,7 +593,7 @@ hr {
 
 .get {
   border: none;
-  position: static;
+  /* position: static; */
   background-color: #ff6b00;
   margin-top: 24px;
   width: 160px;
@@ -606,6 +606,7 @@ hr {
   letter-spacing: 0.03em;
   font-weight: 700;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .get:active {
@@ -613,7 +614,9 @@ hr {
 }
 
 .get:hover {
-  background-color: orange;
+  background-color: #FFF5E1;
+  color: #ff6b00;
+  border: 2px solid #ff6b00;
 }
 
 .frame-mob {
