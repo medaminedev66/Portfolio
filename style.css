@@ -464,10 +464,10 @@ hr {
   width: fit-content;
 }
 
-.btn-language:hover {
+/* .btn-language:hover {
   background-color: orange;
   color: white;
-}
+} */
 
 .btn-project {
   background: #ff6b00;
@@ -482,11 +482,13 @@ hr {
 }
 
 .btn-project:active {
-  background: rgb(255, 196, 0);
+  background: #ff6b00;
 }
 
 .btn-project:hover {
-  background-color: orange;
+  background-color: #FFF5E1;
+  color: #ff6b00;
+  border: 2px solid #ff6b00;
 }
 
 .big-project {
@@ -555,6 +557,7 @@ hr {
 .see-Project:hover {
   background-color: #FFF5E1;
   color: #ff6b00;
+  border: 2px solid #ff6b00;
 }
 
 .see-Project:focus {

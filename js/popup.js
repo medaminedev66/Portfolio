@@ -1,13 +1,16 @@
 const projects = [
   {
-    title: 'Conference Website',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: 'img/projects/conference-mobile.png',
+    title: 'Lunar Hotel',
+    technologies: ['Ruby on rails', 'React', 'JavaScript', 'Redux', 'Ruby'],
+    image: 'img/projects/localhost_3001_.png',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standardA daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
-    liveLink: 'https://medaminedev66.github.io/Conference-page/',
-    sourceLink: 'https://github.com/medaminedev66/Conference-page',
-    alt: 'Conference Website',
+      'This project is about creating API end point using Ruby on Rails and deploying the API on heroku. The API has rooms and reservations endpoints. The API also has authentication and authorization for the user. The API is used in our front end React project which is based on an app to book a room in Lunar hotel.\n \
+      Demo account: \n \
+      - email: testuser@test.com \n \
+      - password: testpasswd',
+    liveLink: 'https://lunar-hotel.netlify.app/',
+    sourceLink: 'https://github.com/medaminedev66/lunar-hotel-backend',
+    alt: 'lunar hotel full stack website',
   },
   {
     title: 'Javascript Capstone',
