@@ -114,6 +114,7 @@ body {
   margin: 5px;
   width: 2rem;
   height: 2rem;
+  cursor: pointer;
   justify-self: end;
 }
 
@@ -369,6 +370,14 @@ main {
   color: #fff5e1;
 }
 
+.social-links li a i {
+  transition: transform 0.5s;
+}
+
+.social-links li a i:hover {
+  transform: scale(1.5);
+}
+
 .btn img {
   height: 24px;
   width: 24px;
@@ -486,9 +495,14 @@ hr {
 }
 
 .btn-project:hover {
-  background-color: #FFF5E1;
+  background-color: #fff5e1;
   color: #ff6b00;
   border: 2px solid #ff6b00;
+}
+
+.btn-project:focus {
+  background-color: #ff6b00;
+  color: #fff5e1;
 }
 
 .big-project {
@@ -551,18 +565,18 @@ hr {
 }
 
 .see-Project:active {
-  background-color: #FFF5E1;
+  background-color: #fff5e1;
 }
 
 .see-Project:hover {
-  background-color: #FFF5E1;
+  background-color: #fff5e1;
   color: #ff6b00;
   border: 2px solid #ff6b00;
 }
 
 .see-Project:focus {
   background-color: #ff6b00;
-  color: #FFF5E1;
+  color: #fff5e1;
 }
 
 .about-me {
@@ -614,9 +628,14 @@ hr {
 }
 
 .get:hover {
-  background-color: #FFF5E1;
+  background-color: #fff5e1;
   color: #ff6b00;
   border: 2px solid #ff6b00;
+}
+
+.get:focus {
+  background-color: #ff6b00;
+  color: #fff5e1;
 }
 
 .frame-mob {
@@ -754,8 +773,15 @@ small {
 }
 
 .footer-form form label button:hover {
-  background: #ffbe90;
+  background-color: #fff5e1;
   color: #ff6b00;
+  border: 2px solid #ff6b00;
+}
+
+.footer-form form label button:focus {
+  background-color: #ff6b00;
+  color: #fff5e1;
+  border: 2px solid #ff6b00;
 }
 
 .icons-list {
@@ -772,6 +798,13 @@ small {
   text-decoration: inherit;
 }
 
+.icons-list li a i {
+  transition: transform 0.5s;
+}
+
+.icons-list li a i:hover {
+  transform: scale(1.5);
+}
 /* .line-2 {
   display: flex;
   justify-content: center;
@@ -891,6 +924,10 @@ small {
   .logo {
     flex: 1;
   }
+
+  /* .logo a img{
+    width: 10rem;
+  } */
 
   nav {
     flex: 1;
