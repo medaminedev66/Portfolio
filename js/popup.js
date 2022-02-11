@@ -30,8 +30,8 @@ const projects = [
   },
   {
     title: 'Countries of all the World',
-    technologies: ['Css', 'Bootsrap', 'React', 'Redux'],
-    image: 'img/projects/countries.PNG',
+    technologies: ['Css', 'Bootstrap', 'React', 'Redux'],
+    image: 'img/projects/countries-world.png',
     description:
       'This React capstone project is about building a mobile web application to check a list of metrics using React and Redux. I selected an API that provides numeric data about countries then I built the webapp around it. The webapp has several pages: \n \
 - Home page with a list of countries that could be filtered by some parameters(Region, population...) and a random country at the top. \n- The detail page for the country details; in the screenshot, the detail page for the Cook Islands country with its information(Capital, Population, Currency, Region...).',
@@ -50,14 +50,14 @@ const projects = [
     alt: 'alternative text',
   },
   {
-    title: 'Awesome Books Project',
-    technologies: ['Html', 'Css', 'JavaScript'],
-    image: 'img/projects/books.png',
+    title: 'Budget app',
+    technologies: ['Ruby', 'Ruby on rails', 'SASS','BOOTSTRAP'],
+    image: 'img/projects/budget.png',
     description:
-      'A simple App that allows a user to efficiently organize all their books.',
-    liveLink: 'https://emmyobonyo.github.io/AwesomeBooks/',
-    sourceLink: 'https://github.com/medaminedev66/AwesomeBooks',
-    alt: 'alternative text',
+      'The Budget app is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    liveLink: 'https://medamine-budget-app.herokuapp.com/',
+    sourceLink: 'https://github.com/medaminedev66/budget-app',
+    alt: 'Budget app',
   },
   {
     title: 'My personal portfolio',
@@ -71,7 +71,7 @@ const projects = [
   },
   {
     title: 'Books store',
-    technologies: ['React', 'JavaScript', 'Bootsrap', 'CSS'],
+    technologies: ['React', 'JavaScript', 'Bootstrap', 'CSS'],
     image: 'img/projects/books-store.png',
     description:
       'In the Bookstore website you can: \n \

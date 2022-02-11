@@ -862,7 +862,7 @@ small {
       rgba(0, 0, 0, 0.418),
       rgba(0, 0, 0, 0.445)
     ),
-    url(./img/projects/books.png);
+    url(./img/projects/budget.png);
 }
 
 .two {
@@ -871,7 +871,7 @@ small {
       rgba(0, 0, 0, 0.678),
       rgba(0, 0, 0, 0.664)
     ),
-    url(./img/projects/countries.PNG);
+    url(./img/projects/countries-world.png);
 }
 
 .six {
@@ -893,11 +893,11 @@ small {
 }
 
 .four-new {
-  background-image: url(./img/projects/books.png);
+  background-image: url(./img/projects/budget.png);
 }
 
 .two-new {
-  background-image: url(./img/projects/countries.PNG);
+  background-image: url(./img/projects/countries-world.png);
 }
 
 .six-new {
