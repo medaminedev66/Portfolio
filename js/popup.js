@@ -42,9 +42,11 @@ const projects = [
   {
     title: 'Conference Website',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: 'img/projects/conference-mobile.png',
+    image: 'img/projects/conference-screens.png',
     description:
-      'This project is based on an online website for a Facebook instant games conference',
+      'This project is based on an online website for a Facebook instant games conference: \n \
+      - The home page has the main program section where the different programs offered are displayed and also different distinguished speakers invited to speak in the conference. \n \
+      - The about page has information about our conference and partnerships.',
     liveLink: 'https://medaminedev66.github.io/Conference-page/',
     sourceLink: 'https://github.com/medaminedev66/Conference-page',
     alt: 'alternative text',
@@ -62,7 +64,7 @@ const projects = [
   {
     title: 'My personal portfolio',
     technologies: ['Html', 'Css', 'JavaScript'],
-    image: 'img/projects/portfolio-desktop.JPG',
+    image: 'img/projects/portfolio-screens.png',
     description:
       'This is a practice project about building a mobile and website version of my portfolio.',
     liveLink: 'https://medaminedev66.github.io/Portfolio/',
