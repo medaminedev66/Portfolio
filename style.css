@@ -331,7 +331,7 @@ main {
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 80px;
-  height: 590px;
+  height: 420px;
   align-items: center;
 }
 
@@ -391,7 +391,7 @@ button {
 .victor {
   position: absolute;
   right: 0%;
-  top: 30%;
+  top: 27%;
   z-index: 1;
 }
 
@@ -488,6 +488,7 @@ hr {
   font-size: 17px;
   padding: 3px 10px;
   cursor: pointer;
+  border: 2px solid #ff6b00;
 }
 
 .btn-project:active {
@@ -497,7 +498,6 @@ hr {
 .btn-project:hover {
   background-color: #fff5e1;
   color: #ff6b00;
-  border: 2px solid #ff6b00;
 }
 
 .btn-project:focus {
@@ -562,6 +562,7 @@ hr {
   font-weight: 700;
   font-size: 17px;
   cursor: pointer;
+  border: 2px solid #ff6b00;
 }
 
 .see-Project:active {
@@ -571,7 +572,6 @@ hr {
 .see-Project:hover {
   background-color: #fff5e1;
   color: #ff6b00;
-  border: 2px solid #ff6b00;
 }
 
 .see-Project:focus {
@@ -621,6 +621,7 @@ hr {
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
+  border: 2px solid #ff6b00;
 }
 
 .get:active {
@@ -629,8 +630,7 @@ hr {
 
 .get:hover {
   background-color: #fff5e1;
-  color: #ff6b00;
-  border: 2px solid #ff6b00;
+  color: #ff6b00; 
 }
 
 .get:focus {
@@ -770,12 +770,12 @@ small {
   letter-spacing: 0.03em;
   justify-content: center;
   cursor: pointer;
+  border: 2px solid #ff6b00;
 }
 
 .footer-form form label button:hover {
   background-color: #fff5e1;
   color: #ff6b00;
-  border: 2px solid #ff6b00;
 }
 
 .footer-form form label button:focus {
@@ -906,6 +906,11 @@ small {
 
 .show {
   display: inline-block;
+}
+
+.hire-btn {
+  margin: 1.5rem 0;
+  width: 30%;
 }
 
 @media screen and (min-width: 720px) {
@@ -1180,6 +1185,11 @@ small {
 
   .visible {
     display: none;
+  }
+
+  .hire-btn {
+    margin: 2rem 0;
+    width: 40%;
   }
 }
 
