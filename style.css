@@ -228,6 +228,12 @@ body {
   color: var(--color-text);
 }
 
+.logo {
+  display: flex;
+  /* gap: 0.2rem; */
+  align-items: center;
+}
+
 header {
   background-color: #3c3a39;
   color: var(--color-text);
@@ -913,6 +919,9 @@ small {
   width: 30%;
 }
 
+.logo a img {
+  width: 1.5rem;
+}
 @media screen and (min-width: 720px) {
   header {
     padding: 0 10rem;
