@@ -776,6 +776,9 @@ small {
   .logo {
     margin-left: 141px;
     flex: 2;
+    transition-property: width, height;
+    transition-duration: 4s;
+    transition-delay: 2s;
   }
 
   nav {
@@ -868,6 +871,10 @@ small {
     width: 100%;
     height: auto;
     max-width: 1000px;
+  }
+
+  .placeholder:hover {
+    transform: scale(0.8);
   }
 
   .content1 p {
